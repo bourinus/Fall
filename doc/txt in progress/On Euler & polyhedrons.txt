@@ -1,0 +1,282 @@
+"On the Euler's theorem on polyhedrons" - Introduction to the double metaphor via geometry
+ 
+abstract: 'Maths too are corrupted.'
+This file aim at piercing a hole in modern mathematics, a proud science
+ 
+ 
+ with a clear example of where the lake of faith is visible and at fault.
+ 
+(please do take note: this document is not ultimate perfection)
+ 
+pastbin address
+https://pastebin.com/E7axWWX9
+ 
+#######################################################################
+Intro:
+ 
+Or why it is good to kill all the giants even if their shoulders are comfortable.
+ 
+"
+Only a moron would see beauty in Euler on polyhedrons
+What a proud would say so, seeing all or saying so.
+"
+ 
+Stupid quote of the day:
+    “To understand the universe, you must know the language in which it is written and that is mathematics”
+ 
+#######################################################################
+ 
+ 
+Chapter 0: A proud 'all seeing' boy point of view
+##########
+ 
+The theorem  "blabla" then s − a + f = 2.
+    Where:  s is the number of summit.
+            a is the number of vertices.
+            f is the number of faces.
+ 
+Example for Plato's 5 regular polyhedrons:
+ 
+                s   f   a
+----------------------------               
+Tetrahedron     4   4   6
+Hexahedron      8   6   12
+Octahedron      6   8   12
+Dodecahedron    20  12  30
+Icosahedron     12  20  30
+ 
+ 
+Comment: nice piece of geometry but this is a corruption for thought.
+From the get go, the geometer pretend to be like God "seeing all"  <-- full hubris confirmed.
+ 
+On a historical note Egyptians were not thinking this way.
+ 
+Chapter 1: Introducing limits in perception
+##########
+ 
+Directly following Egyptians;
+    The only way to instill self limit, doubt and as a result the superiority of God is to formalize our limits with partial blindness.
+ 
+Starting point: the number 3 for the simplicity of it's representation.
+ 
+Formalization of the problematic:
+ 
+        "You are in a room with tree exit points"
+           
+                            .
+                           / \
+                          /   \
+                         /     \
+                        .-------.  
+                       / \     / \           
+                      /   \   /   \
+                     /     \ /     \
+                    .-------.-------.
+   
+                 Net of the Tetrahedron
+ 
+        "You perceive only what's on the ground"
+ 
+With this simple axiom, naturally divides the theorem in two parts:
+what you can see with your eyes vs what what is to be seen.
+ 
+Problem of the 3:
+Tetrahedron     s   f   a
+--------------------------
+Visible         1   3   3    
+Invisible       3   1   3  
+--------------------------
+Sum             4   4   6   <-- world famous, moronic science.
+ 
+Conceiting the "You are in a room with tree exit points" pb,
+we have to consider tow different ways for exiting the room.
+ 
+Hard exit: Visible exits, connected to the same level: the ground.
+Soft exit: Invisible exits, going up or down.
+ 
+Problem of the 4:
+Hexahedron      s   f   a
+--------------------------
+Visible         4   1   4    
+Invisible       7   5   8  
+--------------------------
+Sum             8   6   12  
+ 
+'Going higher in dimension' (Octahedron, Dodecahedron, Icosahedron) is not a good idea.
+Ezekiel, the one who saw God's awe with his own 'eyes' is much more interesting.
+ 
+ 
+Chapter 2: Ezekiel 101
+##########
+ 
+"God sits on a throne, in a middle of a square. On the summit of the square are powerful beings,
+which are also 'wheels': they are the ones interceding for everything below the square level.
+They are wheels within wheels within wheels"
+ 
+because they connect to the triangle level !!
+ 
+Let's go down !
+ 
+Chapter 3: Till the secret of Memphis: the shapelessness
+##########
+ 
+Problem of the 2: "You are on a finite line aka a segment"
+Segment         s   f   a
+--------------------------
+Visible         2   0   1       segment
+Invisible       0   2   1       discus
+--------------------------
+ 
+ 
+Problem of the 1: "You are on a point"
+Point           s   f   a
+--------------------------
+Visible         1   0   0       point
+Invisible       0   0   1       circle
+--------------------------
+ 
+Problem of the 0: "You are not"
+shapelessness   s   f   a
+--------------------------
+Visible         0   0   0       void
+Invisible       1   1   1       seed
+--------------------------
+ 
+Intermezzo: 'Look a tree that's seems so nice' (but it's a trap) "0 3 6 9"
+###########
+ 
+An nice, sweet & smooth introduction to hell, see document 'of Hell'.
+ 
+ 
+Chapter 4: Tree of life vs 'Tree of life'
+##########
+ 
+Now we have a have description of different level: 4,3,2,1,0
+With these first notions that may be fragile but have a good base,
+we can begin to articulate everything.
+ 
+A close inspection of the work of liars give the solution.
+ 
+ 
+Original:                                   Non operative copy: check gematria or demonology
+                                            https://www.pinterest.com/pin/775674735791884030/
+ 
+ 
+ 
+                1                               0
+ 
+        #################################################
+ 
+                .                           .-------.
+               / \                           \     /
+              /   \                           \   /
+             /     \                           \ /
+            .-------.                           .  
+ 
+ 
+        ####################            #################
+                                                .
+   
+            .-------.                       .-------.
+            |       |                       |       |
+            |       |                       |       |
+            |       |                       |       |
+            .-------.                       .-------.
+       
+                .                               .
+               / \                             / \
+              /   \                           /   \
+             /     \                         /     \
+            .-------.                       .-------.  
+ 
+                                                .
+                                                |
+            .-------.                           |
+                                                |
+                .                               .
+           
+ 
+ 
+        #################           #########################
+ 
+                J                               1
+ 
+        #####################################################
+           
+                1                               0                  
+ 
+ 
+A kind warning:
+    I dare u all morons, if you think i'm in full delirium
+    do not forget to let me know what website(s) you possess
+    and to brag about it's security.
+ 
+    One way or another, You'll feel the blow. Mark my word.
+ 
+ 
+Chapter 5:  going higher in dimension: link 3D representation - 3D representation
+##########
+ 
+Previous considerations were grounded ones, to reunite what is visible from what isn't we have to go 3D.
+We have to 'close' the forms and 'connect' them.
+ 
+Closing the pb of the 3: self evident
+    we close the triangle to get the tetrahedron.
+ 
+Closing the pb of the 4: tricky
+    naturally we would like to close the square in the form of a cube, but that would be an error.
+    Doing so would be a lost of meaning (more on that later)
+    We have a choice to do here: let's continue to follow Ezekiel, only one thing sit on the square: God and it's throne.
+    If we represent God by a point this would naturally close the form to give a square based pyramid aka 'a pyramid'
+ 
+Uniting the 3 and the 4:
+    Having done that there is immediately a problem because there is major disconnection between these representations.
+    Maybe that can be fixed by mirroring the forms.
+ 
+    So to sum up:
+        a bi-pyramid (mirrored pyramid regarding it's base)
+        a bi-hexaedron (mirrored hexaedron regarding it's base)
+ 
+Closing the pb of the 2:
+    to close the segment, we have to choose the a triangle
+    then a bi-triangle (mirrored triangle regarding it's base)
+ 
+Closing the pb of the 1:
+    nothing to do, already closed.
+    but it is not connected; ok then we'll connect that floor to the next with a circle
+ 
+Closing the pb of the 0: the fun part  
+    On a theological point view this is death, we are 'under the earth'.
+    And who's dead and risen ? (i let you figure that out for yourself).
+    Dead: no connection between this level and the mortal level
+    Risen: we draw a circle with extremities the zero level and the summit of the 4 level
+ 
+    Ok then, but that's not completely satisfying because only one connection,
+    and all there have 2 layer of connections.
+    We draw another circle with extremities the zero level and the lower summit of the 2 level
+   
+ 
+Chapter 6: Circular reasoning seems annoying
+##########
+ 
+At this point we have 3 forms with straight lines, the higher part of the drawing.
+And bellow, mortals, dead and circles, the lower part of the drawing
+ 
+Let's focus on the higher part: what could that be ? A map of your thought.
+ 
+2D point of view:
+    quadrivium, trivium, morality
+    but the morality part is a weak point: very binary by nature
+ 
+ 
+Chapter 7: mixing the good and the bad together
+##########
+ 
+ 
+ 
+ 
+ 
+chapter 8: Dynamic
+##########
+ 
+A bit of sum up: profound patterns appears from geometry after surrounding it's own arrogance.

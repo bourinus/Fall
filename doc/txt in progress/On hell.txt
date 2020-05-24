@@ -1,0 +1,293 @@
+Introduction to the double metaphor.
+ 
+Abstract: A formal representation of Hell & a closure through faith.
+ 
+This one aim to give a accurate representation of hell:
+its layer, mechanism in a axiomatic way.
+ 
+(please do take note: this document is not ultimate perfection !!!!!!!!!!!!!!)
+ 
+pastbin address
+https://pastebin.com/xRUpUWSG
+ 
+#################################################
+ 
+assumption: it is assume as self evident that
+    * 666 is the mark of corruption & it is for the mind
+    * hell has 3 layer namely H_4, H_3, H_2
+        see work_david.txt from line 442
+            http://pastebin.com/zJHHsbNf
+ 
+    * The reader is familiar with the technics used in
+        'On the Euler's theorem on polyhedrons' Chap 0 & 1 !!!
+            https://pastebin.com/XJDT35Wu
+ 
+Do not read if u do not understand the following concept
+    * representation
+    * canonical
+ 
+#################################################  
+ 
+ 
+ 
+We gonna work on representations:
+    a state with no corruption will be written as 0
+    a state with    corruption will be written as X
+ 
+ 
+ 
+chapter 1: Hell is a frightening place
+#########
+ 
+Following are 2D representations, they are chosen as canonical.
+ 
+ 
+representing H_4
+ 
+    X   X       0   X       0   0       0   0
+ 
+ 
+    X   X       X   X       X   X       X   0
+ 
+    H_4,4       H_4,3       H_4,2       H_4,1
+ 
+representing H_3
+ 
+        X               0               X
+ 
+ 
+    X       X       X       X       0       0      
+ 
+      H_3,3           H_3,2           H_3,1
+ 
+representing H_2
+ 
+    X       X               0       X
+ 
+      H_2,2                   H_2,1
+ 
+ 
+Why these representations are undoubtedly wrong:
+    Where the degree of corruption is maximum (H_4,4, H_3,3, H_2,2) lies abomination, no hope at all.
+    It is self-evident that Jesus can/could/would do something about it
+    We then have to had another component to each layer but those are invisible to the unfaithful.
+ 
+chapter 2: If you have to go in Hell ... there is hope no worries
+ 
+representing H_4+ :                                           faith
+ 
+    X   X       0   X       0   0       0   0       #         0     0
+                                                    #
+                                                    #  
+    X   X       X   X       X   X       X   0       #         0     0
+                                                    #
+    H_4,4       H_4,3       H_4,2       H_4,1       #          H_4,0
+ 
+representing H_3+ :
+ 
+        X               0               X           #           0
+                                                    #
+                                                    #
+    X       X       X       X       0       0       #       0       0
+                                                    #
+      H_3,3           H_3,2           H_3,1         #         H_3,0
+   
+representing H_2+ :
+   
+    X       X               0       X               #       0       0
+                                                    #  
+      H_2,2                   H_2,1                 #         H_2,0
+ 
+ 
+Chapter 3: H_3+ is a fully closable stage
+##########
+ 
+With this representations in mind question can be asked,
+we've done something similar that what has been done with Euler's theorem on polyhedrons,
+but instead of adding blindness we had vision in the darkest places.
+ 
+Let's do a bit of geometry: starting with the number 3 for simplicity
+ 
+H_3+ has 4 components:
+ 
+We can remark that with a negation of all states
+    stages H_3,3 & H_3,0 are in relation
+    stages H_3,2 & H_3,1 are in relation
+We call that relation between stages dual, we remark that no stage of H_3+ are self dual
+from this point of view H_3+ is "closed stage".
+ 
+On the other hand, if we permute states of any stage of H_3+, the shape will always be the same.
+ 
+Theorem on H_3+:
+    H_3+ is globally stable by permutation of its stages (triangle to triangle)
+    No self dual in H_3+.
+ 
+Those two properties are gold, we just want to achieve the same with other layers namely H_4 & H_2.
+ 
+Proposition on H_2+: globally stable with a self dual
+    H_2+ is globally stable by permutation of its stages (segment to segment)
+    There is self dual in H_2+: H_2,1 is it's own dual
+ 
+Proposition on H_4+: not globally stable with a self dual
+    H_4+ is not globally stable by permutation of its stages (lost convexity possible)
+    There is self dual in H_4+: H_4,2 is it's own dual
+ 
+Chapter 4: Study of H_2 & H_4,2
+##########
+ 
+ 
+0       X                   0       X  
+           
+  H_2,1      its symmetry       .
+ 
+                            X       0
+ 
+ 
+ 
+ 
+ 
+0       0                   0       0
+       
+       
+X       X                   X       X
+   
+H_4,2       its symmetry        .
+ 
+                            X       X
+ 
+ 
+                            0       0
+ 
+#mmmm this last object can be viewed as a 3D object, with a bit of change of perspective we can have
+ 
+ 0      X
+0      X
+         
+    .
+ X      0
+X      0   
+ 
+and with a perfect alignment: that's H_2,1 and it's symmetry
+ 
+0       X
+ 
+    .
+ 
+X       0
+ 
+we have a relation ! but it's implying central symmetry and not negation ....
+Plus this relation involve passing from 2D representation to 3D ...
+ 
+Chapter 5 : Negation is such a pitiful aka concept 2D/3D bridging
+###########
+ 
+Let's take a moment to rethink our H_3+ introducing 3D
+ 
+    0       0       0       0  
+ 
+ 
+        0               X
+ 
+        .               .              
+ 
+        X               0               X           #           0
+                                                    #
+                                                    #
+    X       X       X       X       0       0       #       0       0
+                                                    #
+      H_3,3           H_3,2           H_3,1         #         H_3,0
+ 
+ 
+ 
+A new relation:
+    starting from a 2D environment; with a rotation of Pi,
+    continuing in 3D a central symmetry and a negation of all states
+        stages H_3,3 & H_3,0 are in relation
+        stages H_3,2 & H_3,1 are in relation
+We call that relation between stages dual, the previous definition was shit
+  And the previous reasoning still holds: Theorem on H_3+, Proposition on H_2+, Proposition on H_4+.
+ 
+Chapter 6 : forcing H_2+ and H_4+
+###########
+ 
+Wen can not achieve the goal of closing  H_2 & H_4 separately,
+we gonna associated them attacking the weak point which is the 2 auto dual H_2,1 & H_4,2
+ 
+As they are similar, see #4, with 2D/3D bridging,
+We will use H_2,1 as a representation of H_4,2.
+But this will relation will be hidden on the following diagram,
+This will be achieved using H_2,1 and it's symmetry
+ 
+We add lines for easy visualization, (needed to illustrate convexity loss)
+ 
+Part 1: closing H_4+ without H_4,2 via H_2,1:
+ 
+    0----0      0----X              X----X      X----X
+      \/          \/                  \/          \/    
+      /\          /\                  /\          /\                           
+    0----0      0----0              X----0      X----X
+ 
+ 
+    0----0                                      0----X
+      \/                                          \/
+      /\                                          /\
+    X----0                                      X----X 
+                                   
+                                   
+                        0       X
+                            .
+ 
+                        X       0
+ 
+ 
+    X----X                                      0----X
+      \/                                          \/
+      /\                                          /\
+    X----0                                      0----0
+       
+       
+    X----X      0----X              0----0      0----0
+    |    |      |    |              |    |      |    |
+    |    |      |    |              |    |      |    |                             
+    X----X      X----X              X----0      0----0
+                                           
+    H_4,4       H_4,3               H_4,1       H_4,0
+ 
+ 
+Part 2: closing H_2+ without H_2,1 via H_4,2:
+    The consequence of the hidden relation is that H_2,2 and H_0,0 will not be dual one of another
+    Convexity has to kick back in.
+ 
+ 
+            0----0                  0----0
+            |    |                    \/
+            |    |                    /\      
+            X----X                  X----X
+ 
+ 
+Realize that the two last diagram are one an unique object and forget
+H_2,1 and it's symmetry in the part 1.
+ 
+We have the expected result with not a central symmetry thought a point,
+but this time we just align with H_2,1 and it's symmetry in the part 1
+ 
+Cardinality
+-----------
+ 
+half closed H_4+ part 1 = 12 (1 is hidden) => 13
+half closed H_2+ part 2 = 2  (1 is hidden) =>  3
+ 
+Closed H_4+ U H_2+ = 24
+ 
+ 
+Chapter 7: See through lies & use corruption for the greater good
+##########
+    aka two simultaneous form of reasoning and the decision process
+    aka 'on Fascination'
+ 
+'Corruption & perfection are twins concept: if one get the part undoubtedly it will get the whole'
+ 
+ 
+ 
+Chapter 8: application to geometry and number theory
+##########
