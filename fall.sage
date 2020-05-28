@@ -1,26 +1,83 @@
 
+def signature(n):
+	for p in range(0,n):
+		if mod(n,100)!=0: signature(0)
+		x=mod(n,p-n)
+		print(" modulo",n-p,"	", x)
+		if n<=3: signature(mod(p+5*n,100))
+		pass	
+	
+
+
+def counter_56(n):
+	if n==1: return 5/6
+	if n==2: return 10/6
+	if n==2: return 15/6
+	if n==3: return 20/6
+	if n==4: return 25/6
+	if n==6: return 5/6
+	if n==7: return 35/6
+	if n==8: return 40/6
+	if n==9: return 45/6
+	if n==10: return 10/6
+	pass
+	print(n)
+	counter_56(mod(2*n,100))
+
+def counter_65(n):
+	#if n==1: return 25/36
+	#if n==2: return 100/36
+	#if n==2: return 225/36
+	#if n==3: return 20/36
+	#if n==4: return 25/36
+	#if n==6: return 36/36
+	#if n==7: return 49/36
+	#if n==8: return 64/36
+	#if n==9: return 81/36
+	#if n==10: return 25
+	#pass
+	#print(n)
+	#counter_65(mod(2*n,100))
+
+
+	if n==1: return 25/36
+	if n==2: return 100/36
+	if n==2: return 225/36
+	if n==3: return 20/36
+	if n==4: return 25/36
+	if n==6: return 36/36
+	if n==7: return 49/36
+	if n==8: return 64/36
+	if n==9: return 81/36
+	if n==10: return 100/4
+	print(n)
+	counter_65(mod(4*n,100))
+	if n==8: counter_65(n)
+	pass
+
+
 
 def spell(n):
 	cpt=0
 
-	print n, cpt
+	print(n, cpt)
 	if n!=0 : cpt=2*n/3-1
 
-	print n, cpt
+	print(n, cpt)
 	if n!=1 : cpt=n-cpt
 
-	print n, cpt
+	print(n, cpt)
 	if cpt!=13:
 		cpt2=mod(n,100)
 		cpt1=(n-cpt2)/100
 	
-	print cpt1, cpt2
+	print(cpt1, cpt2)
 
 #if n!=0:
 #	if n==cpt1+30:
 #		return	
 #	if n==cpt1+30:
-#		print cpt1, cpt2
+#		print(cpt1, cpt2)
 #	return
 
 
@@ -29,32 +86,32 @@ def spell(n):
 # Babylon in a nutshell: 2 1 2 5 12
 
 def Tower(n):
-	print n, "#########"
+	print(n, "#########")
 	if mod(n,8)==0 : 
 		while Tower(n/8)==mod(n,8):
 			return n/8
-		print "start :" ,n ,":", n-7*n/8, 7*n/8, 5*n/8, 3*n/8, n/4
+		print("start :" ,n ,":", n-7*n/8, 7*n/8, 5*n/8, 3*n/8, n/4)
 		cpt=n/8
 	return n/8
 
-	print "start :" ,n, n-7*n/8
+	print("start :" ,n, n-7*n/8)
 
 #	#################
 #	#########################
 #	if 	mod(n,8)==7: 
-#		print n, "!!!!!!!!"
+#		print(n, "!!!!!!!!")
 #		Tower(mod(cpt)) 
 #	if 	mod(n,6)==5: 
-#		print "round 3:", cpt
+#		print("round 3:", cpt)
 #		cpt=+1
 #		Tower(mod(n,4*n+1))
 #
 #	if 	mod(n,2)==1: 
-#		print "round 1:", cpt
+#		print("round 1:", cpt)
 #		cpt=+1
 #		Tower(mod(n,2*cpt+1))
 #	if 	mod(n,4)==3: 
-#		print "round 2:", cpt
+#		print("round 2:", cpt)
 #		cpt=+1
 #		Tower(mod(n,3*cpt+1))
 #
@@ -74,7 +131,7 @@ def Tower(n):
 
 def Babel(n):
 	if n!=4 or n!=2 or n!=1:
-		print n
+		print(n)
 		Tour(n)
 	else:
 		Collatz(n)			
@@ -95,7 +152,7 @@ def Tour(n):
 
 def Collatz(n):
 	if n!=4 or n!=2 or n!=1:
-		print n
+		print(n)
 		Tour(n)
 	else:
 		Collatz(n)			
@@ -120,19 +177,19 @@ RSA2048=251959084756578934940271832400483985714292821262040320277771378360436620
 def is_prime(n):
 	x=mod(n,1000)
 	y=mod(x,9)
-	print n, x
+	print(n, x)
 	
 	if x==439:x=mod(23*x,19)
 	if x==23: x=mod(17*x,13)
 	if x==19: x=mod(11*x,7)
-	print n, x
+	print(n, x)
 	########################
 
-	print true	
+	print(true	)
 	x=mod(7*x,5)
-	print x
+	print(x)
 	pass
-	print true	
+	print(true	)
 	y=mod(x,3)
 
 		
@@ -156,7 +213,7 @@ def cpt_boolean(a, b, c, x, y, z):
 	#
 	# ( ( x-1 . x-2 )^2 + 1 )^2
 	##### Not counting step, using parity	
-	print a,b,c,x,y,z 
+	print(a,b,c,x,y,z )
 	if a==8:cpt=3/4*a
 
 	cpt=3*(a^2-(c^2-b^2))/4
@@ -166,20 +223,20 @@ def cpt_boolean(a, b, c, x, y, z):
 			cpt=a
 		############################			
 		cpt=6*(4*b-4/3*z-y)/7
-		print a,b,c,x,mod(y,9),mod(z,9) 
+		print(a,b,c,x,mod(y,9),mod(z,9) )
 		cpt_boolean(7, x-y, 5*a+c, 3,x,4*x+y)
 
 	if a==3 and b==4 and c==5:
-		print true	
+		print(true	)
 
 	if a==0 and	b==0 and c==0 and x==0 and y==0 and z==0:
 		cpt_boolean(8*a^2, 7*b, a+b+c, 6*x, 5*y, z-5*b)
 	pass
-	print a,b,c,x,y,z 
-	print "okokok", cpt
-	print "#################" 
-	print "rappel :",	"	",	a,	"	",	b,	c
-	print "rappel :",	"	",	x,	"	",	y,	z
+	print(a,b,c,x,y,z )
+	print("okokok", cpt)
+	print("#################" )
+	print("rappel :",	"	",	a,	"	",	b,	c)
+	print("rappel :",	"	",	x,	"	",	y,	z)
 	#
 	# y=-3946 		mod(z+y,9)=5		3849 mod(z+y,11)=10  (x+y) 
 	# z=-3287 		mod(z,9)=7 			3287 mod(z,11)=9     -z
@@ -274,23 +331,23 @@ def cpt42_Square(n, lvl):
 		if lvl==7: lvl=lvl^2		
 		if lvl==6: lvl=lvl^3		
 		if lvl==5: 
-			print n,lvl
+			print(n,lvl)
 			n+=1  
 			lvl=lvl-5 	
 		if lvl==4: 
 			lvl=0
-			print n,lvl
+			print(n,lvl)
 		if lvl==3: n+=2
 		if lvl==2: 
 			n^2
 			n-=1
-		print n,lvl
+		print(n,lvl)
 	lvl=lvl^2
 	if n==lvl:
 		if lvl==2: lvl=lvl^3		
 		if lvl==1: lvl=lvl^2		
 		if lvl==1: n+=1
-	print n,lvl
+	print(n,lvl)
 
 
 
@@ -329,45 +386,45 @@ def  Interpreter(x):
 	b=(x^3-1)
 	c=(x^4-1)
 	d=(x^5-1)
-	print 	"	",	a,	b,	c, d
+	print(	"	",	a,	b,	c, d)
 	n=		a-b+c
 	lvl=	a+b+c
-	print n, lvl
+	print(n, lvl)
 
 	if a+b+c+d+n+lvl==-8:
 		recall=1
 		n=-n
-		print 	"toto", "	2",	"4",	"6",	"8",	"!"	
-		print 	n, lvl, "	2",	"3",	"5",	"7",
+		print(	"toto", "	2",	"4",	"6",	"8",	"!"	)
+		print(	n, lvl, "	2",	"3",	"5",	"7",)
 
 	if recall==1:
 		lvl=lvl^2
-		print lvl, "!"
+		print(lvl, "!")
 
-	print 	"	", 	x,	n, lvl
+	print(	"	", 	x,	n, lvl)
 	if recall==1:
 		n=	a-b+c
 		lvl=a+b+c+d
 		x=	a+b+c
-	print 	"	", 	x,	n, lvl
+	print(	"	", 	x,	n, lvl)
 
 	#####################
-	print "#################" 
+	print("#################" )
 	r0=mod(lvl,2)
-	print "#################" 
+	print("#################" )
 	r1=mod(mod(lvl^2,11),20)
-	print "#################" 
+	print("#################" )
 	r2=mod(mod(lvl^3,9),20)
-	print "#################" 
+	print("#################" )
 	q1=r1+r2*r2*r0
 	q2=r0+r1*r2*r1
 	q3=r2+r1*r1*r2
-	print "rappel :",	n, lvl,			"(",	mod(lvl,10), ")"
-	print "check 1:", 	"	",	n/lvl, 	lvl
-	print "check 2:	", 	lvl^2, 	lvl^3
-	print "check 3:	", 	n^3, 	n^2
-	print "Results:	", 	r0,		r1,		r2 
-	print "Results:	", 	q1,		q2,		q3 
+	print("rappel :",	n, lvl,			"(",	mod(lvl,10), ")")
+	print("check 1:", 	"	",	n/lvl, 	lvl)
+	print("check 2:	", 	lvl^2, 	lvl^3)
+	print("check 3:	", 	n^3, 	n^2)
+	print("Results:	", 	r0,		r1,		r2 )
+	print("Results:	", 	q1,		q2,		q3 )
 
 	A="Interpreter"
 	if r0==0: A=r1+r2
@@ -379,13 +436,13 @@ def  Interpreter(x):
 	if r2==3: B=r1+lvl
 	C="Interpreter"
 	c=mod(lvl,2)==1
-	print "Answer A:", c
-	print "Answer B:", B
-	print "Answer C:", A
+	print("Answer A:", c)
+	print("Answer B:", B)
+	print("Answer C:", A)
 
-	print "#################" 
-	print cpt13_Triangle(lvl+2,n+lvl^2)/9
-	print "#################" 
+	print("#################" )
+	print(cpt13_Triangle(lvl+2,n+lvl^2)/9)
+	print("#################" )
 	
 
 def cpt_Syracuse(n, lvl):
@@ -413,7 +470,7 @@ def cpt_Syracuse(n, lvl):
 		if mod(n,2)==1: 	return 4*n+6
 		cpt_Syracuse(lvl,n)
 	pass
-	print n
+	print(n)
 
 
 
@@ -429,13 +486,13 @@ def check(p,q,r):
 	cpt=p+q+r	#cpt=mod(cpt,16)
 	if cpt==0:
 		if r/q==p:
-			print 'check 1' 
+			print('check 1')
 			cpt+=1
 		if r/p==q:
-			print 'check 2'
+			print('check 2')
 			cpt+=1
 		if p*q==r:
-			print 'check 3'
+			print('check 3')
 			cpt+=1
 	pass 
 ########################## 3 2 1 0
@@ -449,8 +506,8 @@ def check(p,q,r):
 	if cpt^2==16:
 		if mod(cpt,18)==0:
 			cpt+=10
-			print 'hello, check'
-			print 'true', r/q, r/p, p*q
+			print('hello, check')
+			print('true', r/q, r/p, p*q)
 		check(p+1,q+2,r+3)
 		check(r/q,r/p,r/3)
 	cpt=cpt^2
@@ -458,7 +515,7 @@ def check(p,q,r):
 		# second exit & collatz algorihtm
 		if mod(cpt,18)==1:
 			r=3*r
-			print 'false... testing', cpt
+			print('false... testing', cpt)
 			mod(r/q,9), mod(r/p,9), mod(p*q,9)
 	cpt=(cpt+1)^2
 	pass
@@ -483,35 +540,35 @@ def check(p,q,r):
 	if cpt==14:
 		if cpt==15: 
 			check(r,q,p) 
-			print 'test 1', mod(r,11), mod(q,11), mod(p,11)
+			print('test 1', mod(r,11), mod(q,11), mod(p,11))
 		if cpt==16:
 			cpt+=5	
 			check(r,p,q) 
-			print 'test 2', mod(r,11), mod(p,11), mod(q,11)
+			print('test 2', mod(r,11), mod(p,11), mod(q,11))
 			cpt+=6
 		if cpt==15:
 			check(p,q,r)
-			print 'test 3', mod(p*q,11), mod(r*p,11), mod(r*q,11)
+			print('test 3', mod(p*q,11), mod(r*p,11), mod(r*q,11))
 			cpt+=4
 		if cpt==17:
 			check( mod(r,11), mod(q,11), mod(p,11) )
-			print 'checked'
+			print('checked')
 	pass
 	cpt+=2
 #######################			
 	if cpt==20:
-		print p, q, r
+		print(p, q, r)
 		cpt+=1
-	print 'true'
+	print('true')
 
 
 ###
 def counter(n):
-	print n 					# show value before modification
+	print(n) 					# show value before modification)
 	x=mod(n,9)
 	y=mod(n,11)
 	cpt=3*n+19+1				# 0 -> 20
-	print cpt 					# show value before modification
+	print(cpt) 					# show value before modification)
 	u=mod(cpt,9)
 	x=4*u+19*u-11*n
 	# lenght max =5
@@ -520,7 +577,7 @@ def counter(n):
 	x=mod(u,10)
 	counter(n)
 	if x==n:
-		print u 					# show value before modification
+		print(u) 					# show value before modification)
 		u+=1 	
 		pass
 	#################
@@ -535,11 +592,11 @@ def Ternary_fall(n,x):
 	## Fall of the Triangle
 
 	cpt=mod(n,10)+1				# readjust case mod 17+8n
-	print cpt 					# show value before modification
+	print(cpt) 					# show value before modification)
 	if cpt==11: cpt-=1 			# readjust case mod 10+n
 	#############################	
 	if n>25:	 				# limit
-	## Fall of ternary
+		## Fall of ternary
 		y=mod(x,9)
 		# intermingling y,x,n for 3 new variables.
 		# circle  	(x-i)^2	+	(x+i)^2					 =1 
@@ -547,20 +604,17 @@ def Ternary_fall(n,x):
 		#
 		#			i 		-i
 		#	y 		x	 	n
-		a=	y^2	+	i*x*y	-	x^2 	
+		a=y^2+i*x*y-x^2 	
 		Ternary_fall(n,a)
-
-		b=	y^2	+	i*x*y	-	x^2
+		b=y^2+i*x*y-x^2
 		Ternary_fall(a,b)
-	   	
-	   	c=	y^2	+	i*x*y	-	x^2
-	   	Ternary_fall(x,c)
-
-	   	d=  x^2 +   i*x*n	-	n^2
-	   	Ternary_fall(n-a*b*c,d)
+		c=y^2+i*x*y-x^2
+		Ternary_fall(x,c)
+		d=x^2+i*x*n-n^2
+		Ternary_fall(n-a*b*c,d)
 		# new problems with 3 variables
-	   	# no x beyond this point
-	   	###########################
+	   # no x beyond this point
+	   ###########################
 	pass
 	return a,b,c
 
@@ -569,7 +623,7 @@ def Quaternary_fall(a,b,c,d):
 ## Fall of the Square 			2/2 out "2^2.2/3.5" "6/5"
 
 	cpt=6						# readjust case mod 17+8n
-	print cpt 					# show value before modification
+	print(cpt) 					# show value before modification)
 	if cpt==7: cpt-=1 			# readjust case mod 10+n
 	#############################	
 	if n>25:	 				# limit
@@ -580,7 +634,7 @@ def Quaternary_fall(a,b,c,d):
 		
 			# 1 2 3 5
 			if d==6: 
-			   	if a==3: Quaternary_fall(a,b,c,4) 
+				if a==3: Quaternary_fall(a,b,c,4) 
 				if b==2: Quaternary_fall(a,b,c,1) 
 		
 			# 2 4 6 8	 
@@ -615,7 +669,7 @@ def Quint(n):
 	## poney
 
 	cpt=mod(n,5)+1				# readjust case mod 17+8n
-	print cpt 					# show value before modification
+	print(cpt) 					# show value before modification)
 	if cpt==7: cpt-=1 			# readjust case mod 10+n
 	#############################	
 	if n>5:		 				# limit
@@ -636,7 +690,7 @@ def Quint(n):
 			pass	# Final remembrance of d
 			Quint(3*4*6)
 		pass
-	print n	
+	print(n)
 	return n	
 
 
@@ -645,7 +699,7 @@ def Binary_fall(n):
 	## Fall of 2 
 
 	cpt=mod(n,8)+1				# readjust case mod 17+8n
-	print cpt 					# show value before modification
+	print(cpt) 					# show value before modification)
 	if cpt==8: cpt-=1 			# readjust case mod 8
 	#############################
 	# disappearance of variable x: save & forget
@@ -685,7 +739,7 @@ def Binary_fall(n):
 
 def transcendant_fall(a,b,c):
 	cpt=mod(a+b+c,5)+1		# initiate at 000 & 111
-	print cpt 				# show value before modification
+	print(cpt) 				# show value before modification)
 	if cpt==4: cpt-=1		# readjustment if 100 & 011
 	#########################
 	if a+b+c>=3:			# limit
@@ -723,7 +777,7 @@ def Operator_fall(n):
 	# disappearance of a,b,c
 
 	Ternary_fall()
-	print n, cpt
+	print(n, cpt)
 	#last round 2 digit vs 1
 	#	cpt 21 vs 6 
 	r=mod(cpt,0)				# r=2
@@ -736,7 +790,7 @@ def Operator_fall(n):
 	c=cpt-p0 #5
 	#(c+p0)(c-p2)	(5+1)(5-2) = 6 * 3
 	#(c+p2)(c-p2) 	(5+2)(5-2) = 7 * 3
-	print c, c+p0, c-p2, c+p2 
+	print(c, c+p0, c-p2, c+p2 )
 	# disappearance of variable 'n' no parity after this line
 	return c, c+p0, c-p2, c+p2 
 
@@ -773,10 +827,10 @@ def Operator_Lambda(n):
 	Operator_Lambda(n)
 
 #def Op_Pythagoras(a,b,c):
-#	r=Operator_Pi(a,b,c) 	print r 		q=Operator_Phi(R)		print q
-#	Q=Operator_Phi(q)  		print Q 		R=Operator_Phi(a,b,c) 	print R
-#	S=Operator_Phi(R)		print S 		T=Operator_fall(a,b,c)  print T
-#	x=Operator_Phi(r,s,t)   print x 		return x
+#	r=Operator_Pi(a,b,c) 	print(r 		q=Operator_Phi(R)		print(q)
+#	Q=Operator_Phi(q)  		print(Q 		R=Operator_Phi(a,b,c) 	print(R)
+#	S=Operator_Phi(R)		print(S 		T=Operator_fall(a,b,c)  print(T)
+#	x=Operator_Phi(r,s,t)   print(x 		return x)
 	
 #Op_Pythagoras(1,1,1)
 #Op_Pythagoras(1,1,2)
