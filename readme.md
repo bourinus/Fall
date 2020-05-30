@@ -4,6 +4,8 @@ A stable operator of fall.
 
 ## Getting Started
 
+![Image of Yaktocat](https://github.com/bourinus/Fall/blob/master/doc/pictures/IMG_0193.jpg)
+
 [Project address](https://github.com/bourinus/Fall) 
 
 [Readme address](https://github.com/bourinus/Fall/blob/master/readme.md)
