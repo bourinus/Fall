@@ -1,3 +1,6 @@
+
+import numpy 
+
 import Exceptions
 from Exceptions import Fall_4 as class_Fall4
 
@@ -135,13 +138,23 @@ def counter_65(n):
 	if n==8: counter_65(n)
 	pass
 
+def return2Var(n):
+	print("n: ",n)
+	cpt = mod(n,1000)
+	print(n,cpt)
+	if cpt==0:
+		print ("2*n/3-1: ",2*n/3-1,"; cpt: ",cpt)
+		return2Var(2*n/3-1)
+	if n==1000:
+		print('nim')
 
 
 def spell(n):
 	cpt=0
 
 	print(n, cpt)
-	if n!=0 : cpt=2*n/3-1
+	#if n!=0 : cpt=
+	#if 
 
 	print(n, cpt)
 	if n!=1 : cpt=n-cpt
@@ -231,6 +244,7 @@ def Tour(n):
 	if 	mod(n,4)==1: tour(n)
 
 def Collatz(n):
+
 	if n!=4 or n!=2 or n!=1:
 		print(n)
 		Tour(n)
