@@ -2,6 +2,19 @@ import Exceptions
 from Exceptions import Fall_4 as class_Fall4
 
 
+
+
+
+
+
+
+
+
+A = Matrix([[0,3,6],[1,4,7],[2,5,8]])
+B = Matrix([[0,2,3],[1,5,2],[2,7,1]])
+
+
+
 my_list=['A', 'B', 'C', '#', 1, 2, 3, 4]
 my_list=['A', 'B', '#', 'D', 1, 2, 3, 4]
 my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
@@ -10,16 +23,18 @@ my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
 #m2 = [4:A, 6:B, 2:C]
 #m3 = [9:B, 5:C, 4:D]
 
-def define(b): # base on the numbeer i
+def define(b): 
 	for i in range(0,3):
-		print("base: b1=",b)     # CLASS PRINT
-		print("############")
+		print(b) 
 		try:
-			print("base: b,=",b**i)
+			print("-------")
+			print(b**i)
+			if i!=3: print("###########")
 		except ValueError:
 			ValueError.class_Fall4(my_list(i)[i])
 			break			
 		pass
+
 # j^3=1,
 # 1+j+j²=0, 
 #1/j=j²=j

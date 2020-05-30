@@ -1,0 +1,3 @@
+# ignore all logs
+
+Exceptions/__pycache__/*

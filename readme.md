@@ -2,40 +2,36 @@
 
 A stable operator of fall.
 
+## Getting Started
 
+[Project address](https://github.com/bourinus/Fall) 
 
- * OS: 
+[Readme address](https://github.com/bourinus/Fall/blob/master/readme.md)
 
-debian/ubuntu
+### Environment
 
- * Soft:  
+ * Operating system: 
+ 	[ubuntu](https://ubuntu.com/download)
 
-SageMath version 9.0, Release Date: 2020-01-01 │ Using Python 3.8.2
+ * Software:  
+ 	[Sagemaths](https://www.sagemath.org/)	SageMath version 9.0, Release Date: 2020-01-01 
 
-* Licence: 
-  Creative Commons: Attribution-ShareAlike 4.0 International ([CC BY-SA 4.0][5]) 
+	[Python](https://www.python.org/downloads/release/python-382/) 	Using Python 3.8.2
 
+### Literature
   
-
-  # Literature
-  
-* [On the Euler's theorem on polyhedrons](2) - Maths too are corrupted.
-
-* [On hell](3)  & paradise aka Corruption & perfection are twin concepts: 
+ * [On hell](https://pastebin.com/xRUpUWSG) & paradise aka Corruption & perfection are twin concepts: 
      'if one get the part undoubtedly it will get the  whole'. 
 
-* [The redemption game](4)   - Proof of God Existence & Prime number structure. 
-     On cause & consequence, value & judgments. 
+ * [The redemption game](https://pastebin.com/Ta8phLvj) - Proof of God Existence & Prime number structure. On causes & consequences, values & judgment. 
+
+ * [On the Euler’s theorem on polyhedrons](https://pastebin.com/E7axWWX) - Maths too are corrupted.
 
 
+### License :
 
-​        
+ [GNU-GPL-V3](https://www.gnu.org/licenses/gpl-3.0.fr.html) 
 
-[1]: https://pastebin.com/ttA9yFcQ	"Plan"
-[2]: https://pastebin.com/E7axWWX	"On the Euler's theorem on polyhedrons"
-[3]: https://pastebin.com/xRUpUWSG	"On hell"
-[4]: ://pastebin.com/Ta8phLvj	"The redemption game"
-[5]: https://creativecommons.org/licenses/by-sa/4.0/	"CC BY-SA 4.0"
+ [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 
 
-
-
+  
