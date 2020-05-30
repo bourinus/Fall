@@ -10,23 +10,24 @@ A stable operator of fall.
 
 ### Environment
 
- * Operating system: 
+ Operating system: 
  	[ubuntu](https://ubuntu.com/download)
 
- * Software:  
- 	[Sagemaths](https://www.sagemath.org/)	SageMath version 9.0, Release Date: 2020-01-01 
+ Software:  
+ * [Sagemaths](https://www.sagemath.org/)	SageMath version 9.0, Release Date: 2020-01-01 
 
-	[Python](https://www.python.org/downloads/release/python-382/) 	Using Python 3.8.2
+ * [Python](https://www.python.org/downloads/release/python-382/) 	Using Python 3.8.2
 
 ### Literature
-  
- * [On hell](https://pastebin.com/xRUpUWSG) & paradise aka Corruption & perfection are twin concepts: 
+
+ * [On repetition & sorting](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/structure.txt) How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
+
+ * [On hell](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20hell.txt) & paradise aka Corruption & perfection are twin concepts: 
      'if one get the part undoubtedly it will get the  whole'. 
 
- * [The redemption game](https://pastebin.com/Ta8phLvj) - Proof of God Existence & Prime number structure. On causes & consequences, values & judgment. 
+ * [The redemption game](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/work_david.txt) - Proof of God Existence & Prime number structure. On causes & consequences, values & judgment. 
 
- * [On the Euler’s theorem on polyhedrons](https://pastebin.com/E7axWWX) - Maths too are corrupted.
-
+ * [On the Euler’s theorem on polyhedrons](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20Euler%20%26%20polyhedrons.txt) - Maths too are corrupted.
 
 ### License :
 
