@@ -1,3 +1,4 @@
+# 
 class A(Exception):         
     #
     # level 0
@@ -32,4 +33,3 @@ for cls in [B, C, D,A]:
         print("############")
     except A:
         print("Green")
-        print("############")

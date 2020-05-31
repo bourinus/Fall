@@ -1,3 +1,5 @@
+#'j'  'J barre'
+#
 #-1    1
 #j     1/j 
 #j^2   1/j^2     
@@ -15,18 +17,10 @@ class C(B):
     # level 1
     print("Oops!  j=1/j   Try again...")
     pass
-class D(C):
-    #
-    # level 3
-    print("Oops!  j^2=-1/j^2.  Try again...")
-    pass
 
-for cls in [B, C, D]:
-    print("############")
+for cls in [B, C]:
     try:
         raise cls()
-    except D:
-        print("check D")
     except C:
         print("check C")
     except B:

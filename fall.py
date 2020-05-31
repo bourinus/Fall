@@ -1,8 +1,9 @@
-# no rhythm in arithmetic
-# rhythm is the language of love & many rules are made to be broken.
+import fire
 import numpy as np
 
 from Exceptions import Fall_4 as class_Fall4
+from Exceptions import Fall_3 as class_Fall3
+from Exceptions import Fall_2 as class_Fall2
 
 #import fall.Exceptions
 #from Exceptions import Fall_4 as class_Fall4
@@ -11,15 +12,9 @@ test = np.array([[1,2,3],[4,5,6],[7,8,9]])
 A = np.array([[0,3,6],[1,4,7],[2,5,8]])
 B = np.array([[0,2,3],[1,5,2],[2,7,1]])
 
-
-
 my_list=['A', 'B', 'C', '#', 1, 2, 3, 4]
 my_list=['A', 'B', '#', 'D', 1, 2, 3, 4]
 my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
-
-#m1 = [1:A, 2:B, 3:C]
-#m2 = [4:A, 6:B, 2:C]
-#m3 = [9:B, 5:C, 4:D]
 
 def define(b):
 	s2=b 
@@ -29,8 +24,7 @@ def define(b):
 			s1=b
 			print("-------")
 			print(b**i)
-			if i!=3: 
-				print("###########")
+			if i!=3: print("###########")
 		except ValueError:
 			ValueError.class_Fall4(my_list(i)[i])
 			break			
@@ -38,35 +32,27 @@ def define(b):
 	print("returned:", )
 	return b
 
+def infinite_2loop(p): # only 0 
+	#if p==24: return 26
+	if p!=0: # only 0 is stopped
+		try:  		
+			infinite_2loop(p-1)
+			print(p)
+			if infinite_2loop(p-1)==0: print("###########")
+		except ValueError:
+			ValueError.class_Fall2(D)
+		pass
 
-def infinite_loop(p):
- 	print(0)
- 	try:
- 		infinite_loop(p)
- 		pass
- 	except ValueError as repetition:
- 		raise repetition
- 	else:
- 		pass
-
-
-
-
-
-# j^3=1,
-# 1+j+j²=0, 
-#1/j=j²=j
-#
-#'j'  'J barre'
-#
-#-1    1
-#j     1/j 
-#j^2	  1/j^2		
-#
-#
-#'j'  'J barre'
-#-1
-
+def infinite_3loop(p): # only 0 
+	#if p==24: return 26
+	if p!=0: # only 0 is stopped
+		try:  		
+			infinite_3loop(p-1)
+			print(p)
+			if infinite_3loop(p-1)==0: print("###########")
+		except ValueError:
+			raise ValueError.class_Fall3(D)
+		pass
 
 def sh4d0w(a,b,c):
 	r=b1^a*b2^b*b3^c
@@ -90,19 +76,19 @@ def sh4d0w(a,b,c):
 
 
 
-def signature_25(n):
+def signature_25(n): # 1143 
 	for p in range(0,25):
 		x=mod(n,25-p)
 		print(x)
 		pass	
 
-def signature_15(n):
+def signature_15(n): #19
 	for p in range(0,15):
 		x=mod(n,15-p)
 		print(x)
 		pass	
 
-def signature_5(n):
+def signature_5(n): # 7
 	for p in range(0,5):
 		x=mod(n,5-p)
 		print(x)

@@ -1,3 +1,5 @@
+# no rhythm in arithmetic
+# rhythm is the language of love & many rules are made to be broken.
 
 
 	#(1)			9431, 9433, 9437, 9439
@@ -7,53 +9,10 @@
 	'counting' aka "the problem of similarity"
 
 
-94.31
-2*47.1*31
-
-48.3.49.19
-2.47.51.21
-2.47.51.3*7
-
-4.47.51.7
-96,53,49,93
-2*8*7.53.49.93
-7*8.53.49.93
-56.53.49.93
-56.53.94.7
-
-
-
-94.33
-
-
-
-26.56
-
-2*13.56
-2*13.2*28
-2*13.4*14
-2*13.8*7
-
-2*13.49*5
-4*26.49*3
-4*26.56.51
-108 .56.51
-
-
-8*100:5651 + 
-
-
-
-Chapter I:
-##########
-
-3 Conditions:
-"the problem of direction"	: going higher always
-"the problem of sense" 		: going	forward always
-"the starting point"		: from 0
-
-and let's count till 3 :
-
+1 	2	4
+4	5	6
+7	8	9
+	10
 
 0	7	6				
 1	8	5				
@@ -71,6 +30,18 @@ and let's count till 3 :
 |	|	|  	|		|	|		|	
 |	|	|	|	____|	|	|	|	
 |_______|   |________ 	|___|	|	
+
+
+Chapter I:
+##########
+
+3 Conditions:
+"the problem of direction"	: going higher always
+"the problem of sense" 		: going	forward always
+"the starting point"		: from 0
+
+and let's count till 3 :
+
 
 "where to start" & "the problem of direction" hides the similarity problem.
 
