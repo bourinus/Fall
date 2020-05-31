@@ -1,20 +1,15 @@
+# no rhythm in arithmetic
+# rhythm is the language of love & many rules are made to be broken.
+import numpy as np
 
-import numpy 
-
-import Exceptions
 from Exceptions import Fall_4 as class_Fall4
 
+#import fall.Exceptions
+#from Exceptions import Fall_4 as class_Fall4
 
-
-
-
-
-
-
-
-
-A = Matrix([[0,3,6],[1,4,7],[2,5,8]])
-B = Matrix([[0,2,3],[1,5,2],[2,7,1]])
+test = np.array([[1,2,3],[4,5,6],[7,8,9]])
+A = np.array([[0,3,6],[1,4,7],[2,5,8]])
+B = np.array([[0,2,3],[1,5,2],[2,7,1]])
 
 
 
@@ -26,17 +21,37 @@ my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
 #m2 = [4:A, 6:B, 2:C]
 #m3 = [9:B, 5:C, 4:D]
 
-def define(b): 
+def define(b):
+	s2=b 
 	for i in range(0,3):
 		print(b) 
 		try:
+			s1=b
 			print("-------")
 			print(b**i)
-			if i!=3: print("###########")
+			if i!=3: 
+				print("###########")
 		except ValueError:
 			ValueError.class_Fall4(my_list(i)[i])
 			break			
 		pass
+	print("returned:", )
+	return b
+
+
+def infinite_loop(p):
+ 	print(0)
+ 	try:
+ 		infinite_loop(p)
+ 		pass
+ 	except ValueError as repetition:
+ 		raise repetition
+ 	else:
+ 		pass
+
+
+
+
 
 # j^3=1,
 # 1+j+j²=0, 
@@ -71,6 +86,7 @@ def sh4d0w(a,b,c):
 	exp=(e-1)
 	ratio=10*r*b
 	print("base:",b,"exp:",e-1, "ratio", ratio)
+
 
 
 
@@ -138,41 +154,24 @@ def counter_65(n):
 	if n==8: counter_65(n)
 	pass
 
-def return2Var(n):
-	print("n: ",n)
-	cpt = mod(n,1000)
-	print(n,cpt)
-	if cpt==0:
-		print ("2*n/3-1: ",2*n/3-1,"; cpt: ",cpt)
-		return2Var(2*n/3-1)
-	if n==1000:
-		print('nim')
-
 
 def spell(n):
-	cpt=0
+	cpt1 = mod(n,11)
+	cpt2 = mod(n,9)
 
-	print(n, cpt)
-	#if n!=0 : cpt=
-	#if 
-
-	print(n, cpt)
-	if n!=1 : cpt=n-cpt
-
-	print(n, cpt)
-	if cpt!=13:
-		cpt2=mod(n,100)
-		cpt1=(n-cpt2)/100
+	print(n,cpt1,cpt2)
 	
-	print(cpt1, cpt2)
+	cpt3 = -mod(n,11)
+	cpt4 = -mod(n,9)
 
-#if n!=0:
-#	if n==cpt1+30:
-#		return	
-#	if n==cpt1+30:
-#		print(cpt1, cpt2)
-#	return
+	print(n,cpt3,cpt4)
 
+	if cpt1==0:
+		n+=1
+		print ("2*n/3-1: ",2*n/3+1)
+		return2Var(2*n/3+1)
+
+	
 
 
 ##############################################
