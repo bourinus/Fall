@@ -8,23 +8,25 @@ from Exceptions import Fall_2 as class_Fall2
 #import fall.Exceptions
 #from Exceptions import Fall_4 as class_Fall4
 
+
 test = np.array([[1,2,3],[4,5,6],[7,8,9]])
 A = np.array([[0,3,6],[1,4,7],[2,5,8]])
 B = np.array([[0,2,3],[1,5,2],[2,7,1]])
-
 my_list=['A', 'B', 'C', '#', 1, 2, 3, 4]
 my_list=['A', 'B', '#', 'D', 1, 2, 3, 4]
 my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
 
 def define(b):
+	if isinstance(b, str): return 0
+	if b=='': return 'none'
 	s2=b 
 	for i in range(0,3):
 		print(b) 
+		print("-------")
 		try:
 			s1=b
-			print("-------")
 			print(b**i)
-			if i!=3: print("###########")
+			#if i!=3: print("###########")
 		except ValueError:
 			ValueError.class_Fall4(my_list(i)[i])
 			break			
@@ -916,5 +918,82 @@ def Operator_Lambda(n):
 
 
 
+def hello(name="World"):
+  return "Hello %s!" % name 
+  
+
+def QQ(name='qq'):
+  q1 = input("Enter first: ")
+  q2 = input("Enter second: ")
+  fire.Fire(R(q1*q2))
+  fire.Fire(hello)	
+
+def Q(name='q'):
+  q = input("Question ?, Enter a number: ")
+  fire.Fire(R(q))
+  fire.Fire(hello)	
+
+def R(name='r'):
+  r=define(define(r))
+  print("Results ! here it is:",r)
+  fire.Fire(menu)
+  fire.Fire(QQ(r))
+  fire.Fire(hello)	
 
 
+def chitchat():
+  print("hey !")
+  b = input("chitchat ?, Enter a string: ")
+  if b=='': chitchat()
+  if isinstance(b, str): return 'none'
+  if isinstance(b, str)!=0: fire.Fire(Q(q))	
+  fire.Fire(hello)	
+
+def menu(name="Menu"):
+  c = input("Menu. Enter a choice: ")
+  if c==1: Q(c)
+  if c==2: R(c)
+  if c==3: Q(c)
+  if c==4: define(c)
+
+def nianmenu(name="Nian"):
+  c = input("Nian Menu. Enter a choice: ")
+  if c==1: define(Nian)
+  if c==2: define(2*Nian)
+  if c==3: define(3*Nian)
+  if c==4: define(-Nian)
+
+  
+def main():
+  print("")	
+  a=fire.Fire(hello)	
+  b=fire.Fire(menu)
+  c=fire.Fire(chitchat)
+  if b==4: fire.Fire(nianmenu)
+  main()
+
+
+
+
+
+if __name__ == '__main__':
+  main()
+
+
+def define(b):
+	if isinstance(b, str): return 0
+	if b=='': return 'none'
+	s2=b 
+	for i in range(0,3):
+		print(b) 
+		try:
+			s1=b
+			print("-------")
+			print(b**i)
+			if i!=3: print("###########")
+		except ValueError:
+			ValueError.class_Fall4(my_list(i)[i])
+			break			
+		pass
+	print("returned:", )
+	return b

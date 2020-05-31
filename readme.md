@@ -18,6 +18,9 @@ A stable operator of fall.
 
  * [Python](https://www.python.org/downloads/release/python-382/) 	Using Python 3.8.2
 
+## Python module used
+ * [Fire](https://github.com/google/python-fire)
+
 ### Launching & testing
 
 ## Loading

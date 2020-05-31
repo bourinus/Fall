@@ -10,19 +10,27 @@
 class B(Exception):         
     #
     # level 0
-    print("print  -1=1")
+    print("contradiction:   -1=1            ... lvl 2")
     pass
 class C(B):
     #
     # level 1
-    print("Oops!  j=1/j   Try again...")
+    print("Oops!            j=1/j           Trying again...")
     pass
 
-for cls in [B, C]:
+class D(Exception):
+    #
+    # level 3
+    print("Oops!            j^2=-1/j^2.     Trying again...")
+    pass
+
+for cls in [B, C, D]:
     try:
         raise cls()
+    except D:
+        print("check A++")
     except C:
-        print("check C")
+        print("check C+")
     except B:
-        print("check B")
-
+        print("Result check B:                  1/4 Green")
+        print("-----")
