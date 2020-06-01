@@ -1,7 +1,7 @@
 # Fall
 
-No rhythm in arithmetic.
-Fall: a stable operator of fall.
+Fall: stable operators of fall.
+Exponentiation, paradox & repetition based functions in python.
 
 [Project address](https://github.com/bourinus/Fall) 
 
@@ -47,7 +47,7 @@ Open a terminal at the location of the the file fall.py and load sage:
 ```
 $ sage
 ```
-this gives acces to the sage console:
+this gives access to the sage console:
 ```
 sage: load("fall.py")  
 sage: define((6/5)*(4/3)) 
@@ -61,32 +61,31 @@ $ python3.8 fall.py
 
 ## testing: define()
 
- First understanding:
- define() is a paradox & repetition based function.
- ```
- always repeats it's entry, then print something else.
- always has 3 consecutive values equals.
- always hides an important information: the 6th value is never returned.
- ```
-
- * default test command n°1: 
- ```
- sage: define(i)                            
- I
- -------
- 1
- ###########
- I
- -------
- I
- ###########
- I
- -------
- -1
- ###########
- ```
+First understanding:
+define() is a paradox & repetition based function.
+```
+always repeats it's entry, then print something else.
+always has 3 consecutive values equals.
+always hides an important information: the 6th value is never returned.
+```
+* default test command n°1: 
+```
+sage: define(i)                            
+I
+-------
+1
+###########
+I
+-------
+I
+###########
+I
+-------
+-1
+###########
+```
 * test command n°2: 
- ```
+```
  sage: A = Matrix([[0,3,6],[1,4,7],[2,5,8]])
  sage: define(A)
  [0 3 6]
@@ -113,8 +112,7 @@ $ python3.8 fall.py
  [ 18  54  90]
  [ 21  66 111]
  ###########
- 
- ```
+```
 
 
 # Why this paradox based function is interesting:
@@ -164,6 +162,7 @@ $ python3.8 fall.py
 
 
 ### Literature:
+ * [The Glass Bead Game](https://en.wikipedia.org/wiki/The_Glass_Bead_Game) Hermann Hesse, 1941. A book about the arithmetic of God.
 
  * [The redemption game](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. On causes & consequences, values & judgment. 
 
