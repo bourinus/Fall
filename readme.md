@@ -1,6 +1,7 @@
 # Fall
 
-A stable operator of fall.
+No rhythm in arithmetic.
+Fall: a stable operator of fall.
 
 ## Getting Started
 
@@ -17,9 +18,22 @@ A stable operator of fall.
  * [Sagemaths](https://www.sagemath.org/)	SageMath version 9.0, Release Date: 2020-01-01 
 
  * [Python](https://www.python.org/downloads/release/python-382/) 	Using Python 3.8.2
+ see [linuxsize.com](https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/).
+ 
+ ```
+ $ sudo apt install software-properties-common
+ $ sudo add-apt-repository ppa:deadsnakes/ppa
+ $ sudo apt update
+ $ sudo apt install python3.8
+ ``` 
 
 ## Python module used
  * [Fire](https://github.com/google/python-fire)
+ * Mock
+
+ ```
+ $ pip3 install fire mock
+ ```
 
 ### Launching & testing
 
