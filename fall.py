@@ -5,21 +5,11 @@ from Exceptions import Fall_4 as class_Fall4
 from Exceptions import Fall_3 as class_Fall3
 from Exceptions import Fall_2 as class_Fall2
 
-#import fall.Exceptions
-#from Exceptions import Fall_4 as class_Fall4
-
-
 class Fall(object):
 	"""docstring for ClassName"""
 	def __init__(self, arg):
 		self.arg = arg
 
-test = np.array([[1,2,3],[4,5,6],[7,8,9]])
-A = np.array([[0,3,6],[1,4,7],[2,5,8]])
-B = np.array([[0,2,3],[1,5,2],[2,7,1]])
-my_list=['A', 'B', 'C', '#', 1, 2, 3, 4]
-my_list=['A', 'B', '#', 'D', 1, 2, 3, 4]
-my_list=['A', '#', 'C', 'D', 1, 2, 3, 4]
 
 def define(b):
 	if isinstance(b, str): return b [::-1]
@@ -238,7 +228,6 @@ def Tour(n):
 	if 	mod(n,4)==1: tour(n)
 
 def Collatz(n):
-
 	if n!=4 or n!=2 or n!=1:
 		print(n)
 		Tour(n)
