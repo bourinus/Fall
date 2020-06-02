@@ -3,6 +3,9 @@
 Fall: stable operators of fall.
 Exponentiation, paradox & repetition based functions in python.
 
+
+Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism. github.com/bourinus/Fall python programmer try
+
 [Project address](https://github.com/bourinus/Fall) 
 
 [Readme address](https://github.com/bourinus/Fall/blob/master/readme.md)
@@ -70,19 +73,18 @@ always hides an important information: the 6th value is never returned.
 ```
 * default test command n°1: 
 ```
-sage: define(i)                            
-I
--------
-1
-###########
-I
--------
-I
-###########
-I
--------
--1
-###########
+sage: define(1) 	sage: define(I)		sage: define(0)		sage: define(2)
+1					I					0 					2
+-------				-------				------- 			-------
+1					1					1 					1
+1					I					0 					2
+-------				-------				------- 			-------
+1					I					0 					2
+1					I					0 					2
+-------				-------				------- 			-------
+1					-1					0 					4
+returned:			returned:			returned: 			returned:
+1					I					0 					2
 ```
 * test command n°2: 
 ```
