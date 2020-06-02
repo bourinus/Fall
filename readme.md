@@ -164,9 +164,11 @@ I
 ### Literature:
  * [The Glass Bead Game](https://en.wikipedia.org/wiki/The_Glass_Bead_Game) Hermann Hesse, 1941. A book about the arithmetic of God.
 
- * [The redemption game](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. On causes & consequences, values & judgment. 
+ * [The Redemption game](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. 
+ On causes & consequences, value & judgment. 
 
- * [On hell](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20hell.txt) AND paradise aka corruption & perfection are twin concepts: 'if one get the part undoubtedly it will get the  whole'. 
+ * [On hell](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20hell.txt) AND paradise aka corruption & perfection are twin concepts.
+ 'if one get the part undoubtedly it will get the  whole'. 
 
  * [On repetition & sorting](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/structure.txt) - How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
 
