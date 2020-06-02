@@ -73,18 +73,18 @@ always hides an important information: the 6th value is never returned.
 ```
 * default test command n°1: 
 ```
-sage: define(1)		sage: define(I)		sage: define(0)		sage: define(2)
-1					I					0					2
--------				-------				-------				-------
-1					1					1					1
-1					I					0					2
--------				-------				-------				-------
-1					I					0					2
-1					I					0					2
--------				-------				-------				-------
-1					-1					0					4
-returned:			returned:			returned:			returned:
-1					I					0					2
+sage: define(1)    sage: define(I)      sage: define(0)      sage: define(2)
+1                  I                    0                    2
+-------            -------              -------              -------
+1                  1                    1                    1
+1                  I                    0                    2
+-------            -------              -------              -------
+1                  I                    0                    2
+1                  I                    0                    2
+-------            -------              -------              -------
+1                  -1                   0                    4
+returned:          returned:            returned:            returned:
+1                  I                    0                    2
 ```
 * test command n°2: 
 ```
