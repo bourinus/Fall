@@ -4,7 +4,7 @@ Fall: stable operators of fall.
 Exponentiation, paradox & repetition based functions in python.
 
 
-Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism. github.com/bourinus/Fall python programmer try
+Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 
 [Project address](https://github.com/bourinus/Fall) 
 

@@ -1,6 +1,12 @@
-from fire import testutils
-import fall
-class FallTest(testutils.BaseTestCase):
+# -*- coding: utf-8 -*-
+
+from .context import fall
+
+import unittest
+
+
+class BasicTestSuite(unittest.TestCase):
+    """Basic test cases."""
 
   def test_define(self):
     print("define: test", self)
@@ -37,4 +43,4 @@ class FallTest(testutils.BaseTestCase):
 
 
 if __name__ == '__main__':
-  testutils.main()
+    unittest.main()
