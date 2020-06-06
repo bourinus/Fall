@@ -98,12 +98,11 @@ if __name__ == '__main__':
     print("Prop r3: %s simplify " % str(r4))
     
     try:
-        main()
-    except IOError as err:
-        print("Main Error: ",str(err))
+        menu(name)()
+    except BaseException as err:
+        print("Menu Error: ",str(err))
     finally:
-        print("Exit Fall...")
-        exit()
+        print("Exit menu...")
     
     try:
         main()
