@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from .context import tests
 import unittest
+
+from .context import tests
 
 
 class AdvancedTestSuite(unittest.TestCase):
