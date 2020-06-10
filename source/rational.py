@@ -86,3 +86,7 @@ class Rational(object):
         else:
             raise StopIteration()
     
+def setup(argmn):
+    """
+    
+    """
