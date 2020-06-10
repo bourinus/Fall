@@ -2,3 +2,7 @@
 
 Exceptions/__pycache__/*
 __pycache__/*
+/venv/
+/help/
+/lib/
+/bin/
