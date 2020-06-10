@@ -10,6 +10,9 @@ Welcome to Fall's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   custom_look.rst
+   emacs_help.rst
+
 Indices and tables
 ==================
 
@@ -36,6 +39,7 @@ FAll exceptions
 ===================
 .. automodule:: source.exceptions.Fall_2
    :members:
+   
 Fall populate
 ===================
 .. automodule:: source.exceptions.Fall_3

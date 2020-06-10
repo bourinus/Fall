@@ -52,7 +52,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['prefUsertemplates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -90,12 +90,12 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['prefUserstatic']
+html_static_path = ['./_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -111,7 +111,7 @@ html_static_path = ['prefUserstatic']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Falldoc'
+htmlhelp_basename = 'FallDoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -160,7 +160,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'Fall', u'Fall Documentation',
-     author, 'Fall', 'One line description of project.',
+     author, 'Fall', 'Stable operator of fall.',
      'Miscellaneous'),
 ]
 
@@ -173,7 +173,7 @@ epub_title = project
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
-# epub_identifier = ''
+epub_identifier = 'https://github.com/bourinus/Fall'
 
 # A unique identification for the text.
 #
