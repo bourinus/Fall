@@ -16,7 +16,8 @@ import sys, os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))
+"""
 directory = os.path.dirname(os.path.abspath(__file__))
 
 while not directory.endswith('docs'):  # docs or doc? that's the question!
@@ -26,7 +27,7 @@ directory = os.path.dirname(directory)
 
 if directory not in sys.path:
     sys.path.append(directory)
-
+"""
 # -- General configuration -----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -34,7 +35,7 @@ if directory not in sys.path:
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['Fall.source.*']
+extensions = ['source.fall', 'source.main','source.rational']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -155,7 +156,7 @@ html_use_index = True
 # html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-# html_show_sourcelink = True
+html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False
@@ -209,10 +210,10 @@ latex_documents = [
 # latex_show_urls = False
 
 # Documents to append as an appendix to all manuals.
-# latex_appendices = []
+latex_appendices = []
 
 # If false, no module index is generated.
-# latex_domain_indices = True
+latex_domain_indices = True
 
 # -- Options for manual page output --------------------------------------------
 
@@ -224,7 +225,7 @@ man_pages = [
 ]
 
 # If true, show URL addresses after external links.
-# man_show_urls = False
+man_show_urls = False
 
 # -- Options for Texinfo output ------------------------------------------------
 
@@ -238,10 +239,10 @@ texinfo_documents = [
 ]
 
 # Documents to append as an appendix to all manuals.
-# texinfo_appendices = []
+texinfo_appendices = []
 
 # If false, no module index is generated.
 texinfo_domain_indices = True
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
-# texinfo_show_urls = 'footnote'
+texinfo_show_urls = 'footnote'

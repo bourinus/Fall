@@ -1,16 +1,16 @@
 # coding: utf-8
 """import this"""
 import os 
-import fall
-import fire
-import exceptions
-from rational import Rational
-from rational import RationalException
-from exceptions import Fall_2
-from exceptions import Fall_3
-from exceptions import Fall_4
+#import fall
+#import fire
+from . import exceptions
+from .rational import Rational
+from .rational import RationalException
+from .exceptions import Fall_2
+from .exceptions import Fall_3
+from .exceptions import Fall_4
 from random import random
-from _ast import Try
+
 
 
 def hello(name="World"):

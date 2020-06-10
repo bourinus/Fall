@@ -1,7 +1,7 @@
 #
-from exceptions import Fall_2 as class_Fall2
-from exceptions import Fall_3 as class_Fall3
-from exceptions import Fall_4 as class_Fall4
+#"from exceptions import Fall_2 as chlass_Fall2
+#from exceptions import Fall_3 as class_Fall3
+#from exceptions import Fall_4 as class_Fall4
 
 # import numpy as np
 # *
@@ -57,7 +57,7 @@ class Rational(object):
             a = b
             b = rest
         pgcd = b
-        self.__numerator //= pgcd  # Division entière 
+        self.__numerator //= pgcd  # Division entiï¿½re 
         self.__denominator //= pgcd 
             
     def __str__(self):  

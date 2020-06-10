@@ -1,4 +1,3 @@
-import exceptions
-
-from .fall import main
+from . import exceptions
+from . import main
 
