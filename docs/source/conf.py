@@ -21,8 +21,8 @@ sys.setrecursionlimit(1500)
 # -- Project information -----------------------------------------------------
 
 project = u'Fall'
-copyright = u'2020, tetst'
-author = u'tetst'
+copyright = u'2020, coucroutage'
+author = u'coucroutage'
 
 # The short X.Y version
 version = u''
@@ -139,7 +139,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Fall.tex', u'Fall Documentation',
-     u'tetst', 'manual'),
+     u'coucroutage', 'manual'),
 ]
 
 
