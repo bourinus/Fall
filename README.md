@@ -1,66 +1,91 @@
 # Fall
 
 Fall: stable operators of fall.
+Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 Exponentiation, paradox & repetition based functions in python.
 
-
-Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
+#### Current State: 
+1 stable function: define() only accessible from SageMath console, the doc on its way.
 
 [Project address](https://github.com/bourinus/Fall) 
 
 [Readme address](https://github.com/bourinus/Fall/blob/master/readme.md)
 
-### Current State: 
-1 stable function: define() only accessible from SageMath console.
+##### Example: define()
+a paradox & repetition based function: 1 entry, 3 equality, 2 paradigms.
+```
+always repeats it's entry, then print something else.
+always has 3 consecutive values equals.
+always hides an important information: one value is never returned.
+```
 
-## Getting Started
+# Getting Started
 
-### Environment:
+#### Environment:
 
  Operating system: 
- * [ubuntu](https://ubuntu.com/download)
+ * [debian](https://www.debian.org/) Debian is a free operating system (OS) for your computer. 
+
+#### Clone this project:
+  Open a terminal on the Desktop:
+  ```
+  $ sudo apt install git
+  $ git clone https://github.com/bourinus/Fall.git
+  ```
 
  Software:  
- * [Sagemaths](https://www.sagemath.org/)	 SageMath version 9.0, Release Date: 2020-01-01 
+ * [Sagemaths](https://www.sagemath.org/)	 SageMath version 9.0
 
+ * [Python](https://www.python.org/downloads/release/python-382/) 	Python 3.8.2 
+
+#### With SageMaths:
+ Open a terminal at the location of the the file fall.py and load sage:
  ```
- $ sudo apt install -y sagemath
+ $ sudo apt install sagemath 
+ $ sage
+ ```
+ this gives access to the sage console:
+ ```
+ sage: load("fall.py")  
+ sage: define((6/5)*(4/3)) 
  ```
 
- * [Python](https://www.python.org/downloads/release/python-382/) 	Python 3.8.2
+### With Python:
+
+List of the Python modules used:
+ * [Fire](https://github.com/google/python-fire)  automatically generates command line interfaces (CLIs) from any Python object.
+ * [Mock](https://pypi.org/project/mock/) test library, allows you to replaces parts of your system under test with objects.
+ * [Sphinx](https://www.sphinx-doc.org/en/master/) automatically generate intelligent and beautiful documentation.
+ * [Virtualenv](https://virtualenv.pypa.io/en/latest/) tool to create isolated Python environments. 
+
+ To install Python and pip, open a terminal:
  ```
  $ sudo apt install software-properties-common
  $ sudo add-apt-repository ppa:deadsnakes/ppa
  $ sudo apt update
  $ sudo apt install python3.8
+ $ sudo apt install python3-pip
  ``` 
-
-### Install Python modules used:
- * [Mock](https://pypi.org/project/mock/) test library, allows you to replaces parts of your system under test with objects.
- * [Fire](https://github.com/google/python-fire)  automatically generates command line interfaces (CLIs) from any Python object.
-
+ and to install the Python modules used, in the Fall folder:
  ```
- $ sudo apt install -y python3-pip
- $ sudo pip3 install fire mock
+ $ make
  ```
 
-## Loading with SageMaths:
-Open a terminal at the location of the the file fall.py and load sage:
-
-```
-$ sage
-```
-this gives access to the sage console:
-```
-sage: load("fall.py")  
-sage: define((6/5)*(4/3)) 
-```
-## Executing with terminal & python (not working)
+### Executing with terminal & python (not working)
 ```
 $ python3.8 fall.py
 ```
 
-# Testing
+# Generating the doc:
+Open a terminal in the Fall folder:
+```
+$ cd docs/
+$ make clean && make html
+```
+files generated
+ [index.html](file:///home/billy/Desktop/Fall/docs/_doc/html/index.html)
+
+# Testings:
 
 ## testing: define()
 
@@ -116,7 +141,6 @@ returned:          returned:            returned:            returned:
  ###########
 ```
 
-
 # Why this paradox based function is interesting:
  
  This gives access to other class of functions based on principles: counting/processing differently.
@@ -162,24 +186,21 @@ returned:          returned:            returned:            returned:
  1/4   5/7   70/5    14   14/10 7/5      49/50    98/100  1/50   50/1   50    1/50
  ```
 
-
 ### Literature:
  * [The Glass Bead Game](https://en.wikipedia.org/wiki/The_Glass_Bead_Game) Hermann Hesse, 1941. A book about the arithmetic of God.
 
- * [The Redemption game](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. 
+ * [The Redemption game](https://github.com/bourinus/Growth/blob/master/txt%20files/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. 
  On causes & consequences, value & judgment. 
 
- * [On hell](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20hell.txt) AND paradise aka corruption & perfection are twin concepts.
+ * [On hell](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20hell.txt) AND paradise aka corruption & perfection are twin concepts.
  'if one get the part undoubtedly it will get the  whole'. 
 
- * [On repetition & sorting](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/structure.txt) - How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
+ * [On repetition & sorting](https://github.com/bourinus/Growth/blob/master/txt%20files/structure.txt) - How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
 
- * [On the Euler’s theorem on polyhedrons](https://github.com/bourinus/Fall/blob/master/doc/txt%20in%20progress/On%20Euler%20%26%20polyhedrons.txt) - Maths are too corrupted folks.
+ * [On the Euler’s theorem on polyhedrons](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20Euler%20%26%20polyhedrons.txt) - Maths are too corrupted folks.
 
 ### License :
 
  [GNU-GPL-V3](https://www.gnu.org/licenses/gpl-3.0.fr.html) 
 
  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 
-
-  
