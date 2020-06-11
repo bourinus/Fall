@@ -1,2 +1,4 @@
 fire
 mock
+virtualenv
+sphinx

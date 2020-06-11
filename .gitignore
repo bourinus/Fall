@@ -1,7 +1,7 @@
 # ignore all logs
-
-Exceptions/__pycache__/*
-__pycache__/*
+docs/build/
+source/__pycache__/
+source/exceptions/__pycache__/
 /venv/
 /help/
 /lib/
