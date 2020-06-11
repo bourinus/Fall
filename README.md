@@ -1,15 +1,12 @@
 # Fall
 
 Fall: stable operators of fall.
-Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 Exponentiation, paradox & repetition based functions in python.
+Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 
-#### Current State: 
-1 stable function: define() only accessible from SageMath console, the doc on its way.
+[Project address](https://github.com/bourinus/Fall)   [Readme address](https://github.com/bourinus/Fall/readme.md)
 
-[Project address](https://github.com/bourinus/Fall) 
-
-[Readme address](https://github.com/bourinus/Fall/blob/master/readme.md)
+Current State:  1 stable function: define() only accessible from SageMath console, the doc on its way.
 
 ##### Example: define()
 a paradox & repetition based function: 1 entry, 3 equality, 2 paradigms.
@@ -22,23 +19,17 @@ always hides an important information: one value is never returned.
 # Getting Started
 
 #### Environment:
-
- Operating system: 
- * [debian](https://www.debian.org/) Debian is a free operating system (OS) for your computer. 
+ * [Debian](https://www.debian.org/) Debian is a free operating system (OS) for your computer. 
+ * [Python](https://www.python.org/downloads/release/python-382/) Python 3.8.2 
+ * [Sagemath](https://www.sagemath.org/) SageMath version 9.0 (testing/dev)
 
 #### Clone this project:
-  Open a terminal on the Desktop:
   ```
   $ sudo apt install git
   $ git clone https://github.com/bourinus/Fall.git
   ```
 
- Software:  
- * [Sagemaths](https://www.sagemath.org/)	 SageMath version 9.0
-
- * [Python](https://www.python.org/downloads/release/python-382/) 	Python 3.8.2 
-
-#### With SageMaths:
+### With SageMaths:
  Open a terminal at the location of the the file fall.py and load sage:
  ```
  $ sudo apt install sagemath 
@@ -52,31 +43,32 @@ always hides an important information: one value is never returned.
 
 ### With Python:
 
-List of the Python modules used:
+##### List of the Python modules used:
  * [Fire](https://github.com/google/python-fire)  automatically generates command line interfaces (CLIs) from any Python object.
  * [Mock](https://pypi.org/project/mock/) test library, allows you to replaces parts of your system under test with objects.
  * [Sphinx](https://www.sphinx-doc.org/en/master/) automatically generate intelligent and beautiful documentation.
  * [Virtualenv](https://virtualenv.pypa.io/en/latest/) tool to create isolated Python environments. 
 
- To install Python and pip, open a terminal:
+##### To install :
+ * Python and pip, open a terminal:
  ```
  $ sudo apt install software-properties-common
  $ sudo add-apt-repository ppa:deadsnakes/ppa
  $ sudo apt update
  $ sudo apt install python3.8
  $ sudo apt install python3-pip
- ``` 
- and to install the Python modules used, in the Fall folder:
+ ```
+* the Python modules used, open a terminal in the Fall folder:
  ```
  $ make
  ```
 
-### Executing with terminal & python (not working)
+##### Executing with terminal & python (not working)
 ```
 $ python3.8 fall.py
 ```
 
-# Generating the doc:
+##### Generating the doc:
 Open a terminal in the Fall folder:
 ```
 $ cd docs/
@@ -142,7 +134,7 @@ returned:          returned:            returned:            returned:
 ```
 
 # Why this paradox based function is interesting:
- 
+
  This gives access to other class of functions based on principles: counting/processing differently.
  And because this gives an error management based on the complex number j
  ```
@@ -179,7 +171,7 @@ returned:          returned:            returned:            returned:
 
 # How to deal with paradox based functions:
   Studying repetition and global behavior gives faster computation using principles.
-   
+
  ```
  1/2   5/10  2/5     0.2  2/10  1/10     1/100   100/100  1/10   10/1   10    1/10
  1/3   5/3   30/5    6    6/10  3/10     9/100    90/100  9/10   10/9   10/9  9/10
