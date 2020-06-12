@@ -10,9 +10,6 @@ Welcome to Fall's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   custom_look.rst
-   emacs_help.rst
-
 Indices and tables
 ==================
 

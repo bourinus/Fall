@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-
 from .context import fall
 
-
 class BasicTestSuite(unittest.TestCase):
-    """Basic test cases."""
+  """Basic test cases."""
 
   def test_define(self):
     print("define: test", self)

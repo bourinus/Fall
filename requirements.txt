@@ -1,4 +1,0 @@
-fire
-mock
-virtualenv
-sphinx
