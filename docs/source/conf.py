@@ -14,8 +14,9 @@
 #
 import os
 import sys
-# sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(1, os.path.abspath('../..'))
+sys.path.insert(2, os.path.abspath('../../source'))
 sys.setrecursionlimit(1500)
 
 # -- Project information -----------------------------------------------------
@@ -57,7 +58,7 @@ templates_path = ['', '_static', '_templates']
 #import spec
 #This theme is a dark theme for sphinx documentation based on the read the docs theme.
 #To install it, use pip:
-#$ pip install sphinx_pdj_theme
+#$ rinding this pip command in makefile pip install sphinx_pdj_theme
 import sphinx_pdj_theme
 html_theme = 'sphinx_pdj_theme'
 htm_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
