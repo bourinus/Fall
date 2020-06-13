@@ -1,5 +1,5 @@
 #
-from .exceptions import Fall_2 as class_Fall2
+from .exceptions import Fall_2 as class_Fall2 
 from .exceptions import Fall_3 as class_Fall3
 from .exceptions import Fall_4 as class_Fall4
 
@@ -8,6 +8,7 @@ from .exceptions import Fall_4 as class_Fall4
 
                
 #############
+<<<<<<< HEAD
     # shitty stuff (By Mehdi)
 class RationalException(Exception):
     
@@ -98,6 +99,11 @@ class Rational(object):
 #############
 # Clean stuffs, David's section
 
+=======
+
+#############
+    
+>>>>>>> master
 def define(b):
     """
     Define is a paradox & repetition based function & an interface to other paradoxical functions.
@@ -968,6 +974,8 @@ def Op_Pythagoras(a, b, c):
     # Q=Operator_Phi(q)          print(Q         R=Operator_Phi(a,b,c)     print(R)
     # S=Operator_Phi(R)        print(S         T=Operator_fall(a,b,c)  print(T)
     # x=Operator_Phi(r,s,t)   print(x         return x)
+
+
 
 def setup(argmn):
     """

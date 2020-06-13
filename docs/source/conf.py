@@ -54,11 +54,19 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['', '_static', '_templates']
 
+#import spec
+#This theme is a dark theme for sphinx documentation based on the read the docs theme.
+#To install it, use pip:
+#$ pip install sphinx_pdj_theme
+import sphinx_pdj_theme
+html_theme = 'sphinx_pdj_theme'
+htm_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+#source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -73,10 +81,10 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'sphinx'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -84,7 +92,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -106,6 +114,11 @@ html_static_path = ['./_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+# html_sidebars = {}
+#---sphinx-themes-----
+#html_theme = 'nameko'
+#import sphinx_nameko_theme
+#html_theme_path = [sphinx_nameko_theme.get_html_theme_path()]
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
