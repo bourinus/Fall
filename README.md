@@ -1,7 +1,9 @@
 # Fall
 
 Fall: stable operators of fall.
+
 Exponentiation, paradox & repetition based functions in python.
+
 Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 
 [Project address](https://github.com/bourinus/Fall)   [Readme address](https://github.com/bourinus/Fall/readme.md)
@@ -16,6 +18,8 @@ always has 3 consecutive values equals.
 always hides an important information: one value is never returned.
 ```
 
+Build on repetition this function is a, very, interesting liar ... 
+
 ### Getting Started
 
 ##### Environment:
@@ -24,9 +28,9 @@ always hides an important information: one value is never returned.
  * [Sagemath](https://www.sagemath.org/) SageMath version 9.0 (testing/dev)
 
 ##### Clone this project:
-  ```
-  $ git clone https://github.com/bourinus/Fall.git
-  ```
+ ```
+ $ git clone https://github.com/bourinus/Fall.git
+ ```
 
 ### Run with SageMath:
  Open a terminal at the location of the the file fall.py and load sage:
@@ -50,33 +54,23 @@ always hides an important information: one value is never returned.
  * [Virtualenv](https://virtualenv.pypa.io/en/latest/) tool to create isolated Python environments. 
 
 ##### To install :
- * Option available: open a terminal in the Fall folder:
- ```
- $ make 
-
-make install
-       install dependencies & prepare environment
-make test
-       run tests
-make run
-       run Fall
-make doc
-       build documentation
- ```
 * To install, open a terminal in the Fall folder:
-After install a 'venv' folder containing the virtual environment inside the Fall folder.
+After installation a 'venv' is visible in the Fall folder.
  ```
  $ make install
  ```
+ * Options available: open a terminal in the Fall folder:
+ ```
+ $ make help
 
-* To restart with a fresh install:
+    make reset            reset the virtual environment
+    make clean            remove temp files & virtual environment
+    make install          install dependencies & environment
+    make install_dev      install additional dev tools
+    make test             run tests
+    make run              run Fall
+    make doc              build the documentation
  ```
- $ make clean
- ```
-* To generate the doc:
-```
-$ make doc
-```
 * Executing from terminal & python (not working)
 ```
 $ make run
@@ -184,17 +178,22 @@ returned:          returned:            returned:            returned:
  ```
 
 ### Literature:
- * [The Glass Bead Game](https://en.wikipedia.org/wiki/The_Glass_Bead_Game) Hermann Hesse, 1941. A book about the arithmetic of God.
+ * [The Glass Bead Game](https://en.wikipedia.org/wiki/The_Glass_Bead_Game) 
+ Hermann Hesse, 1941. A book about the arithmetic of God.
 
- * [The Redemption game](https://github.com/bourinus/Growth/blob/master/txt%20files/work_david.txt) - New type of proof & Prime number structure & Proof of God's Existence. 
+ * [The Redemption game](https://github.com/bourinus/Growth/blob/master/txt%20files/work_david.txt) 
+ New type of proof & Prime number structure & Proof of God's Existence. 
  On causes & consequences, value & judgment. 
 
- * [On hell](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20hell.txt) AND paradise aka corruption & perfection are twin concepts.
+ * [On hell](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20hell.txt) 
+ ... and paradise aka 'corruption & perfection are twin concepts',
  'if one get the part undoubtedly it will get the  whole'. 
 
- * [On repetition & sorting](https://github.com/bourinus/Growth/blob/master/txt%20files/structure.txt) - How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
+ * [On repetition & sorting](https://github.com/bourinus/Growth/blob/master/txt%20files/structure.txt)
+ How repetition can hide schemes and how to leverage them to achieve to see the scheme instead of his echoes.
 
- * [On the Euler’s theorem on polyhedrons](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20Euler%20%26%20polyhedrons.txt) - Maths are too corrupted folks.
+ * [On the Euler’s theorem on polyhedrons](https://github.com/bourinus/Growth/blob/master/txt%20files/On%20Euler%20%26%20polyhedrons.txt) 
+ Maths are too corrupted folks.
 
 ### License :
 

@@ -6,3 +6,5 @@ source/exceptions/__pycache__/
 /help/
 /lib/
 /bin/
+
+tests/__pycache__/
