@@ -2,16 +2,12 @@
 """import this"""
 import os 
 #import fall
-<<<<<<< HEAD
+
 #import fire
 import exceptions
 from rational import Rational
 from rational import RationalException
-=======
-import fire
-from .rational import Rational
-from .rational import RationalException
->>>>>>> master
+
 from .exceptions import Fall_2
 from .exceptions import Fall_3
 from .exceptions import Fall_4

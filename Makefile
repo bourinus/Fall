@@ -55,6 +55,7 @@ reset:
 	make venv
 
 clean:
+	if [ -d "venv/" ]; then rm -Rf venv/; fi
 	if [ -d "docs/build/" ]; then rm -Rf docs/build/; fi
 	if [ -d "source/__pycache__/" ]; then rm -Rf source/__pycache__/; fi
 	if [ -d "source/exceptions/__pycache__/" ]; then rm -Rf source/exceptions/__pycache__/; fi
