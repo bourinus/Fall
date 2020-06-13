@@ -2,8 +2,7 @@
 """import this"""
 import os 
 #import fall
-#import fire
-from . import exceptions
+import fire
 from .rational import Rational
 from .rational import RationalException
 from .exceptions import Fall_2
