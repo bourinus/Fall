@@ -27,12 +27,13 @@ prepare-dev:
 	virtualenv venv
 
 # Requirements are in setup.py, so whenever setup.py is changed, re-run installation of dependencies.
-venv: $(VENV_NAME)/bin/activate
-	$(VENV_NAME)/bin/activate: requirements.py
-	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
-	${PYTHON} -m pip install -U pip
-	${PYTHON} -m pip install -e .
-	touch $(VENV_NAME)/bin/activate
+venv: 
+	sudo source . $(VENV_NAME)/bin/activate
+	#sudo . $(VENV_NAME)/bin/activate: requirements.py
+	#test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
+	sudo ${PYTHON} -m pip install -U pip
+	sudo ${PYTHON} -m pip install -e .
+	#sudo $(VENV_NAME)/bin/activate
 
 
 test: venv
