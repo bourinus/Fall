@@ -1,7 +1,7 @@
 # From:
 # https://blog.horejsek.com/makefile-with-python/
 
-.PHONY: help clean install test run doc
+.PHONY: help clean check install test run doc
 
 VENV_NAME?=venv
 VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
@@ -27,15 +27,14 @@ clean:
 
 
 check: PYTHON-exists
-PYTHON-exists: ; @which python > "python 3.7.3"
+PYTHON-exists: ; @which python3.7 > "/dev/null"
+	@echo "python3.7 installed"
 mytarget: check
 .PHONY: check PYTHON-exists
 
 install:
-	sudo apt install 
-	sudo apt update
 	sudo apt install -y python3.7 python3-pip
-	python3 -m pip install virtualenv
+	python3 -m pip install virtualenv graphviz
 	make venv
 
 # Requirements are in requirements.py, 

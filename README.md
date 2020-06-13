@@ -9,26 +9,26 @@ Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, pr
 Current State:  1 stable function: define() only accessible from SageMath console.
 
 ##### Example: define()
-a paradox & repetition based function: 1 entry, 3 equality, 2 paradigms.
+a paradox & based function from which can be built 2 paradigms.
 ```
 always repeats it's entry, then print something else.
 always has 3 consecutive values equals.
 always hides an important information: one value is never returned.
 ```
 
-# Getting Started
+### Getting Started
 
-#### Environment:
+##### Environment:
  * [Debian](https://www.debian.org/) Debian is a free operating system (OS) for your computer. 
  * [Python](https://www.python.org/downloads/release/python-382/) Python 3.8.2 
  * [Sagemath](https://www.sagemath.org/) SageMath version 9.0 (testing/dev)
 
-#### Clone this project:
+##### Clone this project:
   ```
   $ git clone https://github.com/bourinus/Fall.git
   ```
 
-### Run with SageMaths:
+### Run with SageMath:
  Open a terminal at the location of the the file fall.py and load sage:
  ```
  $ sudo apt install sagemath 
@@ -43,7 +43,6 @@ always hides an important information: one value is never returned.
 ### Run with Python:
 
 ##### List of the Python modules used:
-
  * [Fire](https://github.com/google/python-fire)  automatically generates command line interfaces (CLIs) from any Python object.
  * [Mock](https://pypi.org/project/mock/) test library, allows you to replaces parts of your system under test with objects.
  * [Sphinx](https://www.sphinx-doc.org/en/master/) automatically generate intelligent and beautiful documentation.
@@ -64,12 +63,12 @@ make doc
        build documentation
  ```
 * To install, open a terminal in the Fall folder:
+After install a 'venv' folder containing the virtual environment inside the Fall folder.
  ```
  $ make install
  ```
-After install this will generates a 'venv' folder containing the virtual environment inside the Fall folder.
 
-* To restart with a fresh install with the following command :
+* To restart with a fresh install:
  ```
  $ make clean
  ```
@@ -77,7 +76,7 @@ After install this will generates a 'venv' folder containing the virtual environ
 ```
 $ make doc
 ```
-* Executing with terminal & python (not working)
+* Executing from terminal & python (not working)
 ```
 $ make run
 ```
