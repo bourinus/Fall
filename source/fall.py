@@ -8,11 +8,11 @@ from .exceptions import Fall_4 as class_Fall4
 
                
 #############
+    # shitty stuff (By Mehdi)
 class RationalException(Exception):
     
     def __init__(self, message):
         Exception.__init__(self, message)
-
 
 class Rational(object):    
 
@@ -96,16 +96,17 @@ class Rational(object):
             raise StopIteration()
 
 #############
-
+# Clean stuffs, David's section
 
 def define(b):
     """
     Define is a paradox & repetition based function & an interface to other paradoxical functions.
-
+    1 entry, 3 equality, 2 paradigms.
+    
+    a gifted little liar, frequently interesting
     Always repeats it's entry, then print something else.
     Always has 3 consecutive values equals.
     Always hides an important information: the 6th value is never returned.
-
     """
     if isinstance(b, str): return b [::-1]
     if isinstance(b, list): return b [::-1]
@@ -130,6 +131,7 @@ def define(b):
 def infinite_2loop(p):  # only 0 
     """    
     infinite_2loop is a paradox & repetition based function.
+    Infinite loop by construction, stops with paradigm 1
 
     ?
     if p==24: return 26 
@@ -154,11 +156,11 @@ def infinite_2loop(p):  # only 0
         finally:
             pass
 
-
 def infinite_3loop(p):  # only 0 
     """    
     infinite_3loop is a paradox & repetition based function.
-    
+    Infinite loop by construction, stops with paradigm 2
+
     ?
     if p==23: return 27 
     """    
@@ -171,13 +173,11 @@ def infinite_3loop(p):  # only 0
             raise ValueError.class_Fall3(D)
         pass
 
-
 def sh4d0w(a, b, c):
     """    
     sh4d0w 
 
     """    
-    infinite_3loop
 
     r = b1 ^ a * b2 ^ b * b3 ^ c
     #####################
@@ -197,37 +197,40 @@ def sh4d0w(a, b, c):
     ratio = 10 * r * b
     print("base:", b, "exp:", e - 1, "ratio", ratio)
 
-
+##########################
+# signature section
 def signature_25(n):  # 1143 
     """
-    alternative counter with 25
+    O moron pay attention, here lies the secret of primes
+    alternative counter with 25 for bascule
     """
     for p in range(0, 25):
         x = mod(n, 25 - p)
         print(x)
-        pass    
-
+        pass 
 
 def signature_15(n):  # 19
     """
-    alternative counter with 15
+    O moron pay attention, here lies the secret of primes
+    alternative counter with 15 for bascule
     """
     for p in range(0, 15):
         x = mod(n, 15 - p)
         print(x)
         pass    
 
-
 def signature_5(n):  # 7
     """
-    alternative counter with 5
+    O moron pay attention, here lies the secret of primes
+    alternative counter with 5 for bascule
     """
     for p in range(0, 5):
         x = mod(n, 5 - p)
         print(x)
         pass    
 
-
+##########################
+# table section
 def counter_56(n):
     """
     a counter/table
@@ -245,7 +248,6 @@ def counter_56(n):
     pass
     print(n)
     counter_56(mod(2 * n, 100))
-
 
 def counter_65(n):
     """
@@ -365,12 +367,14 @@ def Collatz(n):
 
 def negation(n):
     """
-    Returns its opposite
+    Returns its opposite, 
+    a stupid little liar, sometine intersting
     """
     if n == 1: return 0
     if n == 0: return 1
 
-    ################################################
+################################################
+# primality test section
     ################################################
     # Check counter
     # RSA2048 ?
@@ -409,7 +413,7 @@ def is_prime(n):
     
 def cpt_boolean(a, b, c, x, y, z):
     """
-    Truc.
+    Astute.
     
     # discriminate between two Pythagorean triplets
     # 3 4 5 vs 1 1 2
@@ -453,7 +457,7 @@ def cpt_boolean(a, b, c, x, y, z):
 
 def cpt42_Square(n, lvl):
     """
-    A counter.
+    Abstract operator/counter
     """
     if n == lvl ^ 2:
         if lvl == 7: lvl = lvl ^ 2        
@@ -512,6 +516,8 @@ def cpt13_Triangle(n, lvl):
 def  Interpreter(x):
     """
     Interpreter of Cpt13_triangle.
+
+    ! buggy wrong variable passing
     """
     #    return n+lvl,lvl+1
 
@@ -580,9 +586,10 @@ def  Interpreter(x):
 
 def check(p, q, r):
     """
-    Verify a product in three different ways.
+    Triply redundant operator,
+    Verify a product a.b=c in three different ways.
     
-    Counter for a.b=c
+    'Counter for a.b=c'
     """
     ############## 1 2 3 4 (5)
     # 3n^2 +19n+ 1 ?
@@ -666,8 +673,11 @@ def check(p, q, r):
     print('true')
 
 
-# ##
+# 
 def counter(n):
+    """
+    paradoxical counter, build around bases 9 & 11
+    """
     print(n)  # show value before modification)
     x = mod(n, 9)        
     y = mod(n, 11)
@@ -776,7 +786,6 @@ def Quaternary_fall(a, b, c, d):
 def Quint(n):
     """
     Bounce Operator.
-    Fall of 5: poney
     """
     cpt = mod(n, 5) + 1  # readjust case mod 17+8n
     print(cpt)  # show value before modification)
@@ -952,7 +961,8 @@ def Operator_Lambda(n):
 
 def Op_Pythagoras(a, b, c):
     """
-    Pursuing Operator.
+    Pythagoras Operator: Classical theorem and '2.0 pythagoras'
+    3 entry, 2 paradigms.
     """    
     # r=Operator_Pi(a,b,c)     print(r         q=Operator_Phi(R)        print(q)
     # Q=Operator_Phi(q)          print(Q         R=Operator_Phi(a,b,c)     print(R)

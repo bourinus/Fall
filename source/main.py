@@ -19,14 +19,19 @@ def setup(argmn):
 def hello(name="World"):
   return "Hello %s!" % name
 
-
 def Q(name='q'):
+  """
+  Question manager
+  """
   q = input("Question ?, Enter a number: ")
   fire.Fire(R(q))
   fire.Fire(hello)    
 
 
 def R(name='r'):
+  """
+  Response manager
+  """
   r = fall.define(fall.define(r))
   print("Results ! here it is:", r)
   fire.Fire(menu)
@@ -35,6 +40,9 @@ def R(name='r'):
 
 
 def menu(name="Menu"):
+  """
+  Menu, first level
+  """
   c = input("Menu. Enter a choice: ")
   if c == 0: hello(c)
   if c == 1: help(c)

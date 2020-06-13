@@ -1,5 +1,5 @@
+# From:
 # https://blog.horejsek.com/makefile-with-python/
-
 
 .PHONY: help clean install test run doc
 
@@ -10,7 +10,7 @@ PYTHON=${VENV_NAME}/bin/python3
 .DEFAULT: help
 help:
 	@echo "make install"
-	@echo "       prepare development environment, use only once"
+	@echo "       prepare development environment"
 	@echo "make test"
 	@echo "       run tests"
 	@echo "make run"
@@ -38,7 +38,8 @@ install:
 	python3 -m pip install virtualenv
 	make venv
 
-# Requirements are in requirements.py, so whenever requirements.py is changed, re-run installation of dependencies.
+# Requirements are in requirements.py, 
+# so whenever requirements.py is changed, re-run installation of dependencies.
 venv: $(VENV_NAME)/bin/activate
 $(VENV_NAME)/bin/activate: requirements.py
 	test -d $(VENV_NAME) || virtualenv -p python3.7 $(VENV_NAME)
@@ -55,13 +56,3 @@ run: venv
 
 doc: venv
 	$(VENV_ACTIVATE) && cd docs; make html
-
-
-
-##
-
-init:
-	pip3 install -r requirements.py
-
-#test:
-#	nosetests tests

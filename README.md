@@ -6,7 +6,7 @@ Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, pr
 
 [Project address](https://github.com/bourinus/Fall)   [Readme address](https://github.com/bourinus/Fall/readme.md)
 
-Current State:  1 stable function: define() only accessible from SageMath console, the doc on its way.
+Current State:  1 stable function: define() only accessible from SageMath console.
 
 ##### Example: define()
 a paradox & repetition based function: 1 entry, 3 equality, 2 paradigms.
@@ -25,11 +25,10 @@ always hides an important information: one value is never returned.
 
 #### Clone this project:
   ```
-  $ sudo apt install git
   $ git clone https://github.com/bourinus/Fall.git
   ```
 
-### With SageMaths:
+### Run with SageMaths:
  Open a terminal at the location of the the file fall.py and load sage:
  ```
  $ sudo apt install sagemath 
@@ -41,41 +40,47 @@ always hides an important information: one value is never returned.
  sage: define((6/5)*(4/3)) 
  ```
 
-### With Python:
+### Run with Python:
 
 ##### List of the Python modules used:
+
  * [Fire](https://github.com/google/python-fire)  automatically generates command line interfaces (CLIs) from any Python object.
  * [Mock](https://pypi.org/project/mock/) test library, allows you to replaces parts of your system under test with objects.
  * [Sphinx](https://www.sphinx-doc.org/en/master/) automatically generate intelligent and beautiful documentation.
  * [Virtualenv](https://virtualenv.pypa.io/en/latest/) tool to create isolated Python environments. 
 
 ##### To install :
- * Python and pip, open a terminal:
+ * Option available: open a terminal in the Fall folder:
  ```
- $ sudo apt install software-properties-common
- $ sudo add-apt-repository ppa:deadsnakes/ppa
- $ sudo apt update
- $ sudo apt install python3.8
- $ sudo apt install python3-pip
- ```
-* the Python modules used, open a terminal in the Fall folder:
- ```
- $ make
- ```
+ $ make 
 
-##### Executing with terminal & python (not working)
-```
-$ python3.8 fall.py
-```
+make install
+       install dependencies & prepare environment
+make test
+       run tests
+make run
+       run Fall
+make doc
+       build documentation
+ ```
+* To install, open a terminal in the Fall folder:
+ ```
+ $ make install
+ ```
+After install this will generates a 'venv' folder containing the virtual environment inside the Fall folder.
 
-##### Generating the doc:
-Open a terminal in the Fall folder:
+* To restart with a fresh install with the following command :
+ ```
+ $ make clean
+ ```
+* To generate the doc:
 ```
-$ cd docs/
-$ make clean && make html
+$ make doc
 ```
-files generated
- [index.html](file:///home/billy/Desktop/Fall/docs/_doc/html/index.html)
+* Executing with terminal & python (not working)
+```
+$ make run
+```
 
 # Testings:
 
