@@ -8,7 +8,7 @@ from .exceptions import Fall_4 as class_Fall4
 
                
 #############
-<<<<<<< HEAD
+
     # shitty stuff (By Mehdi)
 class RationalException(Exception):
     
@@ -99,11 +99,7 @@ class Rational(object):
 #############
 # Clean stuffs, David's section
 
-=======
 
-#############
-    
->>>>>>> master
 def define(b):
     """
     Define is a paradox & repetition based function & an interface to other paradoxical functions.
