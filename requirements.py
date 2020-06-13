@@ -4,3 +4,4 @@ sphinx 		# generates intelligent and beautiful documentation.
 pytest      # (dev) Python test module
 pydeps   	# (dev) Python module dependency visualization. 
 virtualenv  # Virtualenv tool to create isolated Python environments. 
+sphinx_pdj_theme
