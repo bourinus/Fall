@@ -10,7 +10,7 @@ PYTHON=${VENV_NAME}/bin/python3
 .DEFAULT: help
 help:
 	@echo "make install"
-	@echo "       prepare development environment"
+	@echo "       install dependencies & environment"
 	@echo "make test"
 	@echo "       run tests"
 	@echo "make run"
@@ -26,16 +26,30 @@ clean:
 	#if [ -d "tests/__pycache__/" ]; then rm -Rf tests/__pycache__/; fi
 
 
-check: PYTHON-exists
-PYTHON-exists: ; @which python3.7 > "/dev/null"
+install: 
+ifeq ($(shell which python3),)
+	sudo apt install -y python3.7 
+else
 	@echo "python3.7 installed"
-mytarget: check
-.PHONY: check PYTHON-exists
-
-install:
-	sudo apt install -y python3.7 python3-pip
-	python3 -m pip install virtualenv graphviz
+endif
+ifeq ($(shell which pip),)
+	sudo apt install -y python3-pip
+else
+	@echo "python3-pip installed"
+endif
+ifeq ($(shell which virtualenv),)
+	sudo apt install -y virtualenv
+else
+	@echo "virtualenv installed"
+endif
+ifeq ($(shell which graphviz),)
+	sudo apt install -y graphviz
+else
+	@echo "graphviz installed"
+endif
+	# graphviz is used but pydeps module
 	make venv
+
 
 # Requirements are in requirements.py, 
 # so whenever requirements.py is changed, re-run installation of dependencies.
