@@ -27,7 +27,7 @@ install_fall:
 	sudo apt-get -y install python3.7 python3-pip
 	python3 -m pip install virtualenv
 	virtualenv venv -p /usr/bin/python3.7
-	pip install -r requirements.txt #not .py
+	python3 -m pip install -r requirements.txt #not .py   pip3 -m !!!!!
 #At this break-point, we need to check dependencies for future dev (ie sys.path)
 #	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 	
