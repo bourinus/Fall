@@ -6,20 +6,22 @@ PYTHON=${VENV_NAME}/bin/python3
 
 .DEFAULT: help
 help:
-	@echo "make prepare-dev"
+	@echo "make install_fall"
 	@echo "   prepare development environment, use only once"
 	@echo "make test"
-		@echo "       run tests"
+	@echo "       run tests"
 	@echo "make lint"
 	@echo "   run pylint and mypy"
 	@echo "make run"
 	@echo "   run project"
 	@echo "make doc"
-	@echo "   build sphinx documentation"
+	@echo "   build fall documentation"
 	@echo "make reset"
 	@echo "   reset venv"
 	@echo "make clean"
 	@echo "   clean build directory"
+	@echo "make var"
+	@echo "   echo python var path"
 	
 install_fall:
 	sudo apt-get -y install python3.7 python3-pip
