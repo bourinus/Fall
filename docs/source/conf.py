@@ -50,7 +50,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'recommonmark',
 ]
+
+#https://stackoverflow.com/questions/46278683/include-my-markdown-readme-into-sphinx
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['', '_static', '_templates']
