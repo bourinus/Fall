@@ -1,7 +1,7 @@
-#
-from .exceptions import Fall_2 as class_Fall2 
-from .exceptions import Fall_3 as class_Fall3
-from .exceptions import Fall_4 as class_Fall4
+import math#
+from exceptions import Fall_2 as class_Fall2 
+from exceptions import Fall_3 as class_Fall3
+from exceptions import Fall_4 as class_Fall4
 
 # import numpy as np
 # *
@@ -120,14 +120,14 @@ def define(b):
         print("-------")
         try:
             s1 = b
-            print(b ** i)
+            print(s1 ** i)
             # if i!=3: print("###########")
         except class_Fall4 as e:
             class_Fall4(e)
             break            
         pass
     print("returned:",)
-    return b
+    return s2
 
 
 def infinite_2loop(p):  # only 0 
@@ -142,7 +142,7 @@ def infinite_2loop(p):  # only 0
         try:          
             print(p)
         except class_Fall2 as e :
-            class_Fall2(B)
+            class_Fall2(e)
             print(e)
             raise(e)    
         except class_Fall2 as e :
