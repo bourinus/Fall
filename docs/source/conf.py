@@ -50,8 +50,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'recommonmark',
+    #'recommonmark',
+    #'m2r',
 ]
+
 
 #https://stackoverflow.com/questions/46278683/include-my-markdown-readme-into-sphinx
 
