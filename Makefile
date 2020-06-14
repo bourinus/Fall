@@ -64,7 +64,7 @@ reset:
 	make clean
 	@rm -Rf "$(VIRTUAL_ENV)"
 	if [ -d "venv/" ]; then rm -Rf venv/; fi
-	virtualenv venv
+	virtualenv venv  -p /usr/bin/python3.7
 	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 clean:
 	if [ -d "docs/build/" ]; then rm -Rf docs/build/; fi
