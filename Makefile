@@ -1,4 +1,4 @@
-.PHONY: help prepare-dev test lint run doc reset clean var
+.PHONY: help install_fall test lint run doc reset clean var
 
 VENV_NAME?=venv
 VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
@@ -21,7 +21,7 @@ help:
 	@echo "make clean"
 	@echo "   clean build directory"
 	
-prepare-dev:
+install_fall:
 	sudo apt-get -y install python3.7 python3-pip
 	python3 -m pip install virtualenv
 	virtualenv venv -p /usr/bin/python3.7
@@ -55,10 +55,13 @@ lint: venv
 	${PYTHON} -m mypy
 
 run: venv
-	${PYTHON} app.py
+	${PYTHON} ./source/main.py
 
 doc: venv
-	$(VENV_ACTIVATE) && cd docs; make html
+	make clean
+	cd docs
+	make html
+#	$(VENV_ACTIVATE) && cd docs; make html
 	
 reset:
 	make clean
