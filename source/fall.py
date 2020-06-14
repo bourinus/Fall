@@ -134,7 +134,6 @@ def infinite_2loop(p):  # only 0
     """    
     infinite_2loop is a paradox & repetition based function.
     Infinite loop by construction, stops with paradigm 1
-
     ?
     if p==24: return 26 
     """    
@@ -162,7 +161,6 @@ def infinite_3loop(p):  # only 0
     """    
     infinite_3loop is a paradox & repetition based function.
     Infinite loop by construction, stops with paradigm 2
-
     ?
     if p==23: return 27 
     """    
@@ -178,7 +176,6 @@ def infinite_3loop(p):  # only 0
 def sh4d0w(a, b, c):
     """    
     sh4d0w 
-
     """    
 
     r = b1 ^ a * b2 ^ b * b3 ^ c
@@ -518,7 +515,6 @@ def cpt13_Triangle(n, lvl):
 def  Interpreter(x):
     """
     Interpreter of Cpt13_triangle.
-
     ! buggy wrong variable passing
     """
     #    return n+lvl,lvl+1
@@ -704,7 +700,6 @@ def Ternary_fall(n, x):
     """    
     Operator of fall.
     Fall of the Triangle: 2 enters, 2 new, 3 out 
-
     "2^2/3"
     """
     cpt = mod(n, 10) + 1  # readjust case mod 17+8n
