@@ -27,13 +27,13 @@ prepare-dev:
 	virtualenv venv -p /usr/bin/python3.7
 	pip install -r requirements.txt #not .py
 #At this break-point, we need to check dependencies for future dev (ie sys.path)
-	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 	
 #alias activate=". ../.env/bin/activate"
 
 # Requirements are in setup.py, so whenever setup.py is changed, re-run installation of dependencies.
 venv: 
-	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 #	sudo . $(VENV_NAME)/bin/activate
 #	sudo . $(VENV_NAME)/bin/activate: requirements.py
 #	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
@@ -65,7 +65,7 @@ reset:
 	@rm -Rf "$(VIRTUAL_ENV)"
 	if [ -d "venv/" ]; then rm -Rf venv/; fi
 	virtualenv venv  -p /usr/bin/python3.7
-	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 clean:
 	if [ -d "docs/build/" ]; then rm -Rf docs/build/; fi
 	if [ -d "source/__pycache__/" ]; then rm -Rf source/__pycache__/; fi
