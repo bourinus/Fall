@@ -9,7 +9,6 @@ from exceptions import Fall_4 as class_Fall4
                
 #############
 
-
     # shitty stuff (By Mehdi)
 class RationalException(Exception):
     
@@ -101,7 +100,6 @@ class Rational(object):
 # Clean stuffs, David's section
 
 
-
 def define(b):
     """
     Define is a paradox & repetition based function & an interface to other paradoxical functions.
@@ -136,6 +134,7 @@ def infinite_2loop(p):  # only 0
     """    
     infinite_2loop is a paradox & repetition based function.
     Infinite loop by construction, stops with paradigm 1
+
     ?
     if p==24: return 26 
     """    
@@ -163,6 +162,7 @@ def infinite_3loop(p):  # only 0
     """    
     infinite_3loop is a paradox & repetition based function.
     Infinite loop by construction, stops with paradigm 2
+
     ?
     if p==23: return 27 
     """    
@@ -178,6 +178,7 @@ def infinite_3loop(p):  # only 0
 def sh4d0w(a, b, c):
     """    
     sh4d0w 
+
     """    
 
     r = b1 ^ a * b2 ^ b * b3 ^ c
@@ -374,8 +375,8 @@ def negation(n):
     if n == 1: return 0
     if n == 0: return 1
 
-################################################
-# primality test section
+    ################################################
+    # primality test section
     ################################################
     # Check counter
     # RSA2048 ?
@@ -414,20 +415,102 @@ def is_prime(n):
     
 def cpt_boolean(a, b, c, x, y, z):
     """
-    Astute.
+    Astute: cpt_boolean(a,b,a-b,1/cpt,y,cpt^2-y^2)
     
-    # discriminate between two Pythagorean triplets
-    # 3 4 5 vs 1 1 2
-    #    cpt_boolean(a,b,a-b,1/cpt,y,cpt^2-y^2)
-    #    x    13    169        
-    #         12    144
-    #            
-    #    3    4     5    
-    #    9    16    25 is 
-    #
-    # ( ( x-1 . x-2 )^2 + 1 )^2
-    ##### Not counting step, using parity
-      
+    discriminate between two Pythagorean triplets: ex 3 4 5 vs 1 1 2
+    x    13    169        
+         12    144
+
+    3    4     5    
+    9    16    25 is 
+        
+    ( ( x-1 . x-2 )^2 + 1 )^2
+    ###############################
+    Not counting step, using parity
+    
+    y=-3946       mod(z+y,9)=5        3849 mod(z+y,11)=10  (x+y) 
+    z=-3287       mod(z,9)=7          3287 mod(z,11)=9     -z
+    x+y=-659      mod(y,9)=7          659  mod(y,11)=10    -y
+               
+    659     mod(y,9)=5          659  mod(y,11)=10
+    3946    mod(z+y,9)=7        3849 mod(z+y,11)=10
+    3287    mod(z,9)=2          3287 mod(z,11)=9
+               
+    3949-6*659=-5 3949/5=3959
+    3287-5*659= 8 3284/8=5*659     2*659 + 1 = 1319
+    659-6*569= 4*659              659 = 3^6 - 70.
+        mod        9                        11                     18/10
+    U(n)=n*659:   0 2 4 6 8 1 3 5 7 1 3   : 0 10 9 8 7 6 .5 4 3 2 1
+    U(n)=n*3287:  0 2 4 6 8 1 3 5 7 0 2   : 0 .9 7 5 3 1 10 8 6 4 2 
+    U(n)=n*3949:  0 7 5 3 1 6 4 4 2 0 7   : 0 .0 0 0 0 0 .0 0 0 0 0 
+                  8/7                      7                       6/5
+    U(n)=n*659:   0 3 6 1 4 7 2 5 0 3 6   : 0 1 2 3 4 5 6 0 1 2 3
+    U(n)=n*3287:  0 7 6 5 4 3 2 1 0 7 6   : 0 0 4 1 5 2 6 0 4 1 5
+    U(n)=n*3949:  0 5 2 7 4 1 6 3 0 5 2   : 0 1 2 3 4 5 6 0 1 2 3
+                   9                         7                     16/9
+    U(n)=n*751:   0 4 8 3 7 2 6 1 5 0 4   : 0 3 6 9 1 .4 .7 10 2 5 8
+    U(n)=n*658:   0 1 2 3 4 5 6 7 8 0 1   : 0 9 7 5 3 .1 10 .8 6 4 2
+    U(n)=n*607:   0 4 8 3 7 2 6 1 5 0 4   : 0 2 4 6 8 10 1. .3 5 7 9
+        mod        9                         11                        9/11
+    U(n)=n*569:   0 2 4 6 8 1 3 5 7 1 3   : 0 10 9 8 7 6 5 4 3 2 1
+    ###############################################################
+    :   659 & 661 form a twin prime pair.
+    :       is a Sophie Germain prime: 2*659 + 1 = 1319 is also prime
+    :       = 3^6 - 70 & is the 120th prime number 659 divides 12^7 - 1
+    :   569 & 571 form a twin prime pair.
+    :       = 13^2 + 20^2
+    :       is in a primitive Pythagorean triple: 569^2 = 231^2 + 520^2
+    :       has the representation 569 = 2^9 + 57.
+    :       divides 86^4 - 1.
+    #########################################################
+               2,  3,  5,  7   ex
+               3,  5,  7,  11  ex 
+     Quadruplet of primes beyond 10 000 :  (p, p+2, p+6, p+8).
+               5,  7,  11, 13 
+               11, 13, 17, 19
+    
+    (1)            5651, 5653, 5657, 5659
+    (2)            9431, 9433, 9437, 9439 <-- 439 is not prime exception aka the 13th pb 19*23
+    
+    #Pythagorean triplets  
+       Primitives:
+       1:          3,  4,  5               9   16  25          
+       2:          5,  12, 13              25  144 169
+       Test:       569 231 520             569 13^2 20^2  Bases: 10,13,20
+       Primality   *   *   *               *   *    not   
+    
+    
+                                   
+    (9 431, 9 433, 9 437, 9 439) : 431,433,437,439 : * *   *  !!!  <-- 439 is not prime
+    (5 651, 5 653, 5 657, 5 659) : 651,653,657,659 : * *   *   *
+    (56 51, 56 53, 56 57, 56 59) : 51, 53, 57, 59 : *  *   *   *   
+    (94 31, 94 33, 94 37, 94 39) : 31, 33, 37, 39 : *  not *   ok : 39 = 3 * 13 ok but contradiction no go further
+                               
+                                   31,     33,     37,     39      Similiarity                     
+    (9 431, 9 433, 9 437, 9 439):  431,    433,    437,    439     Results
+                                   831,    833,    837,    839     Hypothesis
+                               831=3×277   ?       ?       *
+                               *       833=3^2×43  *
+                                       *       837=3^3×31          Check
+    
+    
+    (9 431, 9 433, 9 437, 9 444): 431, 433, 437, 444 : *   *   *   no
+                                       *2  *   ^2
+    1031 1033 1137 1139
+    
+    
+               31, 33, 56, 65  = 1089 3136 4225 :  10  31  25
+    
+     569^2 = 231^2 + 520^2
+                                                                                                       37 is prime     
+                                                                                   0 5 6 7     0   13  3       
+                                                                                   0 5 9 8     4   17  7
+                                                                                   0 4 5 7     7   11  1
+                                                                                   0 3 6 9     0   18  8
+    
+       Needed:
+           5 primitives Quadruplet of primes nor more & basis 10,13,20
+           exception  
     """
     print(a, b, c, x, y, z)
     if a == 8:
@@ -454,7 +537,7 @@ def cpt_boolean(a, b, c, x, y, z):
     print("#################")
     print("rappel :", "    ", a, "    ", b, c)
     print("rappel :", "    ", x, "    ", y, z)
-   
+
 
 def cpt42_Square(n, lvl):
     """
@@ -517,6 +600,7 @@ def cpt13_Triangle(n, lvl):
 def  Interpreter(x):
     """
     Interpreter of Cpt13_triangle.
+
     ! buggy wrong variable passing
     """
     #    return n+lvl,lvl+1
@@ -702,6 +786,7 @@ def Ternary_fall(n, x):
     """    
     Operator of fall.
     Fall of the Triangle: 2 enters, 2 new, 3 out 
+
     "2^2/3"
     """
     cpt = mod(n, 10) + 1  # readjust case mod 17+8n
