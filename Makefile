@@ -1,4 +1,4 @@
-.PHONY: help prepare-dev test lint run doc reset clean var
+.PHONY: help install_fall test lint run doc reset clean var
 
 VENV_NAME?=venv
 VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
@@ -6,22 +6,24 @@ PYTHON=${VENV_NAME}/bin/python3
 
 .DEFAULT: help
 help:
-	@echo "make prepare-dev"
+	@echo "make install_fall"
 	@echo "   prepare development environment, use only once"
 	@echo "make test"
-		@echo "       run tests"
+	@echo "       run tests"
 	@echo "make lint"
 	@echo "   run pylint and mypy"
 	@echo "make run"
 	@echo "   run project"
 	@echo "make doc"
-	@echo "   build sphinx documentation"
+	@echo "   build fall documentation"
 	@echo "make reset"
 	@echo "   reset venv"
 	@echo "make clean"
 	@echo "   clean build directory"
+	@echo "make var"
+	@echo "   echo python var path"
 	
-prepare-dev:
+install_fall:
 	sudo apt-get -y install python3.7 python3-pip
 	python3 -m pip install virtualenv
 	virtualenv venv -p /usr/bin/python3.7
@@ -55,10 +57,12 @@ lint: venv
 	${PYTHON} -m mypy
 
 run: venv
-	${PYTHON} app.py
+	${PYTHON} ./source/main.py
 
-doc: venv
-	$(VENV_ACTIVATE) && cd docs; make html
+doc:
+	cd docs; make html
+	
+#	$(VENV_ACTIVATE) && cd docs; make html
 	
 reset:
 	make clean
