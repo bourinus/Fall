@@ -59,10 +59,9 @@ lint: venv
 run: venv
 	${PYTHON} ./source/main.py
 
-doc: venv
-	make clean
-	cd docs
-	make html
+doc:
+	cd docs; make html
+	
 #	$(VENV_ACTIVATE) && cd docs; make html
 	
 reset:
