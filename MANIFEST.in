@@ -1,1 +1,5 @@
 include LICENSE
+include *.md
+recursive-include docs *.md *.py Makefile
+recursive-include  *.md *.py Makefile
+recursive-include source *.md *.py Makefile
