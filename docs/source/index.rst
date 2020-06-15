@@ -5,13 +5,17 @@
 
 Welcome to Fall's documentation!
 ================================
-
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
-.. mdinclude:: ../../README.md
+   ternary_fall.rst
+   cpt_boolean.rst
+      
+Readme File
+===========
+.. automodule:: ../../README.md
+   :members:
 
 Indices and tables
 ==================
@@ -25,7 +29,7 @@ Fall main
 .. automodule:: source.main
    :members:
 
-FAll controller
+Fall controller
 =====================
 .. automodule:: source.fall
    :members:
@@ -35,12 +39,12 @@ Fall models
 .. automodule:: source.rational
    :members:
 
-FAll exceptions
+Fall exceptions 2
 ===================
 .. automodule:: source.exceptions.Fall_2
    :members:
    
-Fall populate
+Fall exceptions 3
 ===================
 .. automodule:: source.exceptions.Fall_3
    :members:
