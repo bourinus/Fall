@@ -1,92 +1,122 @@
-import math#
-from exceptions import Fall_2 as class_Fall2 
+# coding: utf-8
+#import math
+from exceptions import Fall_2 as class_Fall2, Fall_2 
 from exceptions import Fall_3 as class_Fall3
 from exceptions import Fall_4 as class_Fall4
+from pip._vendor.html5lib._ihatexml import charStringToList
+from pip._internal.utils.compat import str_to_display
+from builtins import str
+from fall import infinite_3loop
 
-# import numpy as np
-# *
-#############
-
-#############
-# Clean stuffs, David's section
-
-def define(b):
-    """
-    Define is a paradox & repetition based function & an interface to other paradoxical functions.
-    1 entry, 3 equality, 2 paradigms.
-    !! see 'addendum' readme
+class DefineException(Exception):
     
-    a gifted little liar, frequently interesting
-    Always repeats it's entry, then print something else.
-    Always has 3 consecutive values equals.
-    Always hides an important information: the 6th value is never returned.
+    def __init__(self, message):
+        Exception.__init__(self, message)
+
+
+class Define(object):    
     """
-    if isinstance(b, str): return b [::-1]
-    if isinstance(b, list): return b [::-1]
+    Define Class
+    """
+    def __init__(self, defineInit=0, defineReturn=1, defineString="DefineInstance" ):
+        self.defineInit = defineInit
+        self.defineReturn = defineReturn
+        self.defineString = defineString
+        self.define()        
     
-    if b == '': return 0
-    s2 = b 
-    for i in range(0, 3):
-        print(b) 
-        print("-------")
-        try:
-            s1 = b
-            print(s1 ** i)
-            # if i!=3: print("###########")
-        except class_Fall4 as e:
-            class_Fall4(e)
-            break            
-        pass
-    print("returned:",)
-    return s2
+    @property
+    def defineInit(self):
+        return self.__defineInit
+     
+    @defineInit.setter 
+    def defineInit(self, newNum, ):
+        if isinstance(newNum, int) == False:
+            raise DefineException("Numerator must be an integer")
+        self.__defineInit = newNum
+         
+    @property
+    def defineReturn(self):
+        return self.defineReturn
+    
+    @defineReturn.setter 
+    def defineReturn(self, newDen):
+        if isinstance(newDen, int) == False:
+            raise DefineException("defineReturn must be an integer")
+        if newDen == 0:
+            raise DefineException("defineReturn cannot be zero")
+        self.__defineReturn = newDen
 
+    @property
+    def defineString(self):
+        return self.defineReturn
+    
+    @defineString.setter 
+    def defineString(self, defineString):
+        if isinstance(defineString, str) == False:
+            raise DefineException("defineString must be an string")
+        if defineString == '':
+            raise DefineException("defineString can't be empty")
+        self.__defineString = defineString
+          
 
-def infinite_2loop(p):  # only 0 
-    """    
-    infinite_2loop is a paradox & repetition based function.
-    Infinite loop by construction, stops with paradigm 1
+    def define(self, defineInit):
+        """
+        Define is a paradox & repetition based function & an interface to other paradoxical functions.
+        1 entry, 3 equality, 2 paradigms.
+        
+        a gifted little liar, frequently interesting
+        Always repeats it's entry, then print something else.
+        Always has 3 consecutive values equals.
+        Always hides an important information: the 6th value is never returned.
+        """
+        if isinstance(defineInit, str):
+                self.__defineReturn = "Some to wirite or do"
+                self.__defineString = "Someting telse"
+        if isinstance(defineInit, list):
+                self.__defineReturn = charStringToList(list) #TO DO 
+        
+        if defineInit == '':
+                self.__defineReturn = 0
+        s2 = defineInit 
+        for i in range(0, 3):
+                print(defineInit) 
+                print("-------")
+                try:
+                        s1 = defineInit
+                        print(s1 ** i)
+                        # if i!=3: print("###########")
+                except class_Fall4 as e:
+                        class_Fall4(e)
+                        break                        
+                pass
+        #print("returned:",)
+        #In Classes, doin't return set an attribute like following
+        self.__defineReturn = s2
 
-    ?
-    if p==24: return 26 
-    """    
-    if p != 0:  # only 0 is stopped
-        try:          
-            print(p)
-        except class_Fall2 as e :
-            class_Fall2(e)
-            print(e)
-            raise(e)    
-        except class_Fall2 as e :
-            class_Fall2(C)
-            print(e)
-            raise(e)    
-        except class_Fall2 as e :
-            class_Fall2(D)
-            print(e)
-            raise(e)    
-        else:    
-            infinite_2loop(p - 1)
-        finally:
-            pass
+    def infinite_3loop(self, p):  # only 0 
+        """    
+        infinite_3loop is a paradox & repetition based function.
+        Infinite loop by construction, stops with paradigm 2
 
-def infinite_3loop(p):  # only 0 
-    """    
-    infinite_3loop is a paradox & repetition based function.
-    Infinite loop by construction, stops with paradigm 2
+        ?
+        if p==23: return 27 
+        """
+        if p != 0:
+            try:
+                self.infinite_3loop(self, p-1)
+                
+#             try:  # only 0 is stopped
+#                 infinite_3loop(self.infinite_3loop(p - 1)
+#                 self.__defineString = str(p)   #print(p)
+#                 if infinite_3loop(p - 1) == 0:
+#                     self.__defineReturned = 0
+#                     self.__defineString = "#############"
+#                 #print("###########")
+                
+            except DefineException(""):
+                raise Fall_2(self)
 
-    ?
-    if p==23: return 27 
-    """    
-    if p != 0:  # only 0 is stopped
-        try:          
-            infinite_3loop(p - 1)
-            print(p)
-            if infinite_3loop(p - 1) == 0: print("###########")
-        except ValueError:
-            raise ValueError.class_Fall3(D)
-        pass
-
-def sh4d0w(a, b, c):
+    def sh4d0w(a, b, c):
     """    
     sh4d0w 
 
@@ -110,6 +140,7 @@ def sh4d0w(a, b, c):
     ratio = 10 * r * b
     print("base:", b, "exp:", e - 1, "ratio", ratio)
 
+    
 ##########################
 # signature section
 def signature_25(n):  # 1143 
@@ -216,6 +247,33 @@ def Tower(n):
     return n / 8
 
     print("start :" , n, n - 7 * n / 8)
+    #    #################
+    #    #########################
+    #    if     mod(n,8)==7: 
+    #        print(n, "!!!!!!!!")
+    #        Tower(mod(cpt)) 
+    #    if     mod(n,6)==5: 
+    #        print("round 3:", cpt)
+    #        cpt=+1
+    #        Tower(mod(n,4*n+1))
+    #
+    #    if     mod(n,2)==1: 
+    #        print("round 1:", cpt)
+    #        cpt=+1
+    #        Tower(mod(n,2*cpt+1))
+    #    if     mod(n,4)==3: 
+    #        print("round 2:", cpt)
+    #        cpt=+1
+    #        Tower(mod(n,3*cpt+1))
+    #
+    #    pass
+    #    if     mod(n,7)==5: Tower(mod(n,6*n+5))
+    #    if     mod(n,5)==4: Tower(mod(n,7*n+1))
+    #    if     mod(n,3)==3: Tower(mod(n,8*n+1))
+    #    if     mod(n,3)==2: Tower(mod(n,9*n+1)) 
+    # 0 : 5 win
+    # 1 : 0 win fails
+    # 0 : 5 fails
 
 
 def Babel(n):
@@ -300,9 +358,92 @@ def is_prime(n):
 def cpt_boolean(a, b, c, x, y, z):
     """
     Astute: cpt_boolean(a,b,a-b,1/cpt,y,cpt^2-y^2)
-    see addendum !!
     
     discriminate between two Pythagorean triplets: ex 3 4 5 vs 1 1 2
+    x    13    169        
+    y     12    144
+
+    3    4     5    
+    9    16    25 is 
+        
+    ( ( x-1 . x-2 )^2 + 1 )^2
+    ##
+    Not counting step, using parity
+
+    y=-3946       mod(z+y,9)=5        3849 mod(z+y,11)=10  (x+y) 
+    z=-3287       mod(z,9)=7          3287 mod(z,11)=9     -z
+    x+y=-659      mod(y,9)=7          659  mod(y,11)=10    -y
+               
+    659     mod(y,9)=5          659  mod(y,11)=10
+    3946    mod(z+y,9)=7        3849 mod(z+y,11)=10
+    3287    mod(z,9)=2          3287 mod(z,11)=9
+               
+    3949-6*659=-5 3949/5=3959
+    3287-5*659= 8 3284/8=5*659     2*659 + 1 = 1319
+    659-6*569= 4*659              659 = 3^6 - 70.
+
+    mod         9                        11                     18/10
+    U(n)=n*659:   0 2 4 6 8 1 3 5 7 1 3   : 0 10 9 8 7 6 .5 4 3 2 1
+    U(n)=n*3287:  0 2 4 6 8 1 3 5 7 0 2   : 0 .9 7 5 3 1 10 8 6 4 2 
+    U(n)=n*3949:  0 7 5 3 1 6 4 4 2 0 7   : 0 .0 0 0 0 0 .0 0 0 0 0 
+
+    #              8/7                      7                       6/5
+    U(n)=n*659:   0 3 6 1 4 7 2 5 0 3 6   : 0 1 2 3 4 5 6 0 1 2 3
+    U(n)=n*3287:  0 7 6 5 4 3 2 1 0 7 6   : 0 0 4 1 5 2 6 0 4 1 5
+    U(n)=n*3949:  0 5 2 7 4 1 6 3 0 5 2   : 0 1 2 3 4 5 6 0 1 2 3
+
+    #               9                         7                     16/9
+    U(n)=n*751:   0 4 8 3 7 2 6 1 5 0 4   : 0 3 6 9 1 .4 .7 10 2 5 8
+    U(n)=n*658:   0 1 2 3 4 5 6 7 8 0 1   : 0 9 7 5 3 .1 10 .8 6 4 2
+    U(n)=n*607:   0 4 8 3 7 2 6 1 5 0 4   : 0 2 4 6 8 10 1. .3 5 7 9
+    
+    #    mod        9                         11                        9/11
+    U(n)=n*569:   0 2 4 6 8 1 3 5 7 1 3   : 0 10 9 8 7 6 5 4 3 2 1
+    ###############################################################
+    :   659 & 661 form a twin prime pair.
+    :       is a Sophie Germain prime: 2*659 + 1 = 1319 is also prime
+    :       = 3^6 - 70 & is the 120th prime number 659 divides 12^7 - 1
+    :   569 & 571 form a twin prime pair.
+    :       = 13^2 + 20^2
+    :       is in a primitive Pythagorean triple: 569^2 = 231^2 + 520^2
+    :       has the representation 569 = 2^9 + 57.
+    :       divides 86^4 - 1.
+    #########################################################
+    :           2,  3,  5,  7   ex
+    :           3,  5,  7,  11  ex 
+    : Quadruplet of primes beyond 10 000 :  (p, p+2, p+6, p+8).
+    :           5,  7,  11, 13 
+    :           11, 13, 17, 19
+    #
+    (1)            5651, 5653, 5657, 5659
+    (2)            9431, 9433, 9437, 9439 <-- 439 is not prime exception aka the 13th pb 19*23
+    #
+    #Pythagorean triplets  
+    :   Primitives:
+    :   1:          3,  4,  5               9   16  25          
+    :   2:          5,  12, 13              25  144 169
+    :   Test:       569 231 520             569 13^2 20^2  Bases: 10,13,20
+    :   Primality   *   *   *               *   *    not   
+                                  
+    (9 431, 9 433, 9 437, 9 439) : 431,433,437,439 : * *   *  !!!  <-- 439 is not prime
+    (5 651, 5 653, 5 657, 5 659) : 651,653,657,659 : * *   *   *
+    (56 51, 56 53, 56 57, 56 59) : 51, 53, 57, 59 : *  *   *   *   
+    (94 31, 94 33, 94 37, 94 39) : 31, 33, 37, 39 : *  not *   ok : 39 = 3 * 13 ok but contradiction no go further
+                             
+    #                              31,     33,     37,     39      Similiarity                     
+    (9 431, 9 433, 9 437, 9 439):  431,    433,    437,    439     Results
+    #                              831,    833,    837,    839     Hypothesis
+    #                          831=3×277   ?       ?       *
+    #                          *       833=3^2×43  *
+    #                                  *       837=3^3×31          Check
+    #    #                   37 is prime     
+    0 5 6 7     0   13  3       
+    0 5 9 8     4   17  7
+    0 4 5 7     7   11  1
+    0 3 6 9     0   18  8
+    # 
+    Needed:
+    5 primitives Quadruplet of primes nor more & basis 10,13,20
     """
     print(a, b, c, x, y, z)
     if a == 8:
@@ -361,15 +502,16 @@ def cpt42_Square(n, lvl):
 def cpt13_Triangle(n, lvl):
     """
     Abstract operator/counter
-    001  100
-    112  011
-    345  110
-    count in level of primes
-    OUTPUTS
-        1*  
-        2*
-        3*
     """
+    # 001  100
+    # 112  011
+    # 345  110
+    # count in level of primes
+    # OUTPUTS
+    #    1*  
+    #     2*
+    #     3*
+    #################
     if     3 * lvl == lvl ^ 3:  # only 
         if lvl * lvl == lvl + lvl: 
             lvl = mod(lvl, 10)
@@ -393,8 +535,9 @@ def  Interpreter(x):
     Interpreter of Cpt13_triangle.
 
     ! buggy wrong variable passing
-    return n+lvl,lvl+1
     """
+    #    return n+lvl,lvl+1
+
     a = (x ^ 2 - 1)
     b = (x ^ 3 - 1)
     c = (x ^ 4 - 1)
@@ -551,7 +694,6 @@ def check(p, q, r):
 def counter(n):
     """
     paradoxical counter, build around bases 9 & 11
-    shitty name waiting for a better
     """
     print(n)  # show value before modification)
     x = mod(n, 9)        
@@ -573,21 +715,17 @@ def counter(n):
 
 
 #
-def ternary_fall(n, x):
+def Ternary_fall(n, x):
     """    
-    Operator of fall. Fall of the Triangle: 2 enters, 2 new, 3 out 
-    See addendum ternary_fall !!!
+    Operator of fall.
+    Fall of the Triangle: 2 enters, 2 new, 3 out 
 
-    Preamble counter: "2^2/3"
-        readjust case mod 17+8
-        show value before modification
-        readjust case mod 10+n
+    "2^2/3"
     """
-    #########################    
-    cpt = mod(n, 10) + 1    # readjust case mod 17+8n
-    print(cpt)              # show value before modification)
+    cpt = mod(n, 10) + 1  # readjust case mod 17+8n
+    print(cpt)  # show value before modification)
     if cpt == 11: cpt -= 1  # readjust case mod 10+n
-    #########################    
+    #############################    
     if n > 25:  # limit
         # # Fall of ternary
         y = mod(x, 9)
@@ -597,13 +735,13 @@ def ternary_fall(n, x):
         #                  i          -i
         #                  y          x         n
         a = y ^ 2 + i * x * y - x ^ 2     
-        ternary_fall(n, a)
+        Ternary_fall(n, a)
         b = y ^ 2 + i * x * y - x ^ 2
-        ternary_fall(a, b)
+        Ternary_fall(a, b)
         c = y ^ 2 + i * x * y - x ^ 2
-        ternary_fall(x, c)
+        Ternary_fall(x, c)
         d = x ^ 2 + i * x * n - n ^ 2
-        ternary_fall(n - a * b * c, d)
+        Ternary_fall(n - a * b * c, d)
         # new problems with 3 variables
        # no x beyond this point
        ###########################
@@ -612,7 +750,7 @@ def ternary_fall(n, x):
 
 
 #
-def quaternary_fall(a, b, c, d):   
+def Quaternary_fall(a, b, c, d):   
     """ 
     Operator of fall.
     Fall of the Square:  4 enters, 1   out
@@ -626,36 +764,36 @@ def quaternary_fall(a, b, c, d):
     if n > 25:  # limit
         # enter only 12 or 24 ? many square not allowed here
         if d == 5: 
-            if a == 4: quaternary_fall(a, b, c, 3) 
-            if b == 3: quaternary_fall(a, b, c, 2) 
+            if a == 4: Quaternary_fall(a, b, c, 3) 
+            if b == 3: Quaternary_fall(a, b, c, 2) 
         
             # 1 2 3 5
             if d == 6: 
-                if a == 3: quaternary_fall(a, b, c, 4) 
-                if b == 2: quaternary_fall(a, b, c, 1) 
+                if a == 3: Quaternary_fall(a, b, c, 4) 
+                if b == 2: Quaternary_fall(a, b, c, 1) 
         
             # 2 4 6 8     
             if d == 16: 
-                if b == 3: quaternary_fall(a, b, c, 4) 
-                if c == 0: quaternary_fall(a, b, c, 14) 
+                if b == 3: Quaternary_fall(a, b, c, 4) 
+                if c == 0: Quaternary_fall(a, b, c, 14) 
         pass 
         # ## lvl 14    # a b c d: x
         if d > 14: 
             if a ^ 2 + b ^ 2 == c ^ 2:
-                quaternary_fall(a, b, c, 14)
-                ternary_fall(-a, b, -c)            
-            quaternary_fall(a, b, c, 12)
+                Quaternary_fall(a, b, c, 14)
+                Ternary_fall(-a, b, -c)            
+            Quaternary_fall(a, b, c, 12)
         # # lvl 17     # 1 2 3 4: y
         if d > 17: 
-            if quaternary_fall(a ^ 2 + b ^ 2 - d ^ 2) == 1: 
-                quaternary_fall(b, c, d, 4)
-            quaternary_fall(a, b, c, 19)            
+            if Quaternary_fall(a ^ 2 + b ^ 2 - d ^ 2) == 1: 
+                Quaternary_fall(b, c, d, 4)
+            Quaternary_fall(a, b, c, 19)            
         pass
         # # lvl 7    # yes or no
         if Binary_fall(a ^ 2 + b ^ 2 - c ^ 2) == 1:
-            quaternary_fall(-a, b, -c, 14)
+            Quaternary_fall(-a, b, -c, 14)
         if Binary_fall(a ^ 2 + b ^ 2 + c ^ 2) == 0:
-            quaternary_fall(-a, d, -c, 12)
+            Quaternary_fall(-a, d, -c, 12)
     if d == 19: 
         pass
     return a, b, c, d
@@ -736,7 +874,8 @@ def Binary_fall(n):
 #
 def transcendant_fall(a, b, c):
     """
-    Operator of fall, for trenscendant numbers    
+    Operator of fall.
+    
     """
     print(cpt)  # show value before modification)
     cpt = mod(a + b + c, 5) + 1  # initiate at 000 & 111
@@ -777,7 +916,7 @@ def Operator_fall(n):
     # declaration of variable 'y' & a,b,c
     # disappearance of a,b,c
 
-    ternary_fall()
+    Ternary_fall()
     print(n, cpt)
     # last round 2 digit vs 1
     #    cpt 21 vs 6 
@@ -799,7 +938,7 @@ def Operator_fall(n):
 # 
 def Operator_Phi(n): 
     """    
-    Creative Operator, destroyer
+    Creative Operator.
     Definition of fraction by level.
     """    
     if n == 1:     Operator_Phi(0)
@@ -812,7 +951,7 @@ def Operator_Phi(n):
 
 
 #
-def Operator_Pi(n):                              
+    def Operator_Pi(n):                              
     """    
     Stoping Operator
     """    
@@ -822,22 +961,22 @@ def Operator_Pi(n):
     print("Incorrect input !") 
 
 
-def Operator_Lambda(n): 
+    def Operator_Lambda(n): 
     """    
-    Pursuing Operator, seek and name
+    Pursuing Operator.
     """    
-    if Operator_Phi(n) == 1:      Operator_Lambda(n)         
-    if Operator_fall(n) == 3:     Operator_fall(n)
-    if Operator_fall(n) == 4:     Operator_Phi(n)
-    if Operator_fall(n) == 3:     Operator_Pi(n)
-    if Operator_fall(n) == 16:    Operator_Phi(n)
-    if Operator_fall(n) == 25:    Operator_Pi(n)
-    print("Incorrect input ?")      
-    n = n * phi 
-    Operator_Lambda(n)
+        if Operator_Phi(n) == 1:         Operator_Lambda(n)         
+        if Operator_fall(n) == 3:        Operator_fall(n)
+        if Operator_fall(n) == 4:     Operator_Phi(n)
+        if Operator_fall(n) == 3:        Operator_Pi(n)
+        if Operator_fall(n) == 16:     Operator_Phi(n)
+        if Operator_fall(n) == 25:       Operator_Pi(n)
+        print("Incorrect input ?")         
+        n = n * phi 
+        Operator_Lambda(n)
 
 
-def Op_Pythagoras(a, b, c):
+    def Op_Pythagoras(a, b, c):
     """
     Pythagoras Operator: Classical theorem and '2.0 pythagoras'
     3 entry, 2 paradigms.
@@ -850,5 +989,57 @@ def Op_Pythagoras(a, b, c):
 
 def setup(argmn):
     """
-    This is how we comment
-    """
+    
+    """         
+#     def simplify(self): 
+#         if self.__numerator > self.__denominator:
+#             a = self.__numerator
+#             b = self.__denominator
+#         else:
+#             b = self.__numerator
+#             a = self.__denominator
+#         
+#         while True:
+#             rest = a % b
+#             if rest == 0: break
+#             a = b
+#             b = rest
+#         pgcd = b
+#         self.__numerator //= pgcd  # Division enti�re 
+#         self.__denominator //= pgcd 
+#             
+#     def __str__(self):  
+#         return "[%d/%d]" % (self.__numerator, self.__denominator)
+#     
+#     def __add__(self, r2):
+#         return Define(
+#             self.numerator * r2.denominator + self.denominator * r2.numerator,
+#             self.denominator * r2.denominator
+#         )
+# 
+#     # __sub__    __mul__   __truediv__
+#     
+#     def __lt__(self, r2):
+#         return self.numerator * r2.denominator < self.denominator * r2.numerator
+# 
+#     # __le__   __gt__   __ge__   __eq__   __ne__ 
+#     
+#     def toFloat(self):
+#         return self.__numerator / self.__denominator
+#         
+#     def __iter__(self):
+#         self.__iterPos = 0
+#         return self
+#     
+#     def next(self):  # For Python 2.x
+#         return self.__next__()
+#     
+#     def __next__(self):  # For Python 3.x
+#         self.__iterPos += 1
+#         if self.__iterPos == 1:
+#             return self.numerator
+#         elif self.__iterPos == 2:
+#             return self.denominator
+#         else:
+#             raise StopIteration()
+# 
