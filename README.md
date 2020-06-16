@@ -198,5 +198,3 @@ returned:          returned:            returned:            returned:
 ### License :
 
  [GNU-GPL-V3](https://www.gnu.org/licenses/gpl-3.0.fr.html) 
-
- [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 
