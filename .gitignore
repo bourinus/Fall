@@ -10,5 +10,6 @@ source/exceptions/__pycache__/
 tests/__pycache__/
 
 .project
-
+.settings
 .pydevproject
+.pytest_cache
