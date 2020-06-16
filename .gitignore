@@ -8,3 +8,7 @@ source/exceptions/__pycache__/
 /bin/
 
 tests/__pycache__/
+
+.project
+
+.pydevproject
