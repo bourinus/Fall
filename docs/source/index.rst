@@ -11,10 +11,11 @@ Welcome to Fall's documentation!
    
    ternary_fall.rst
    cpt_boolean.rst
+   ../../README.md
       
 Readme File
 ===========
-.. automodule:: ../../README.md
+.. automodule::
    :members:
 
 Indices and tables
