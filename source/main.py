@@ -1,22 +1,19 @@
 # coding: utf-8
 """import this"""
 import os 
-import fall
-
-from random import random
+from source.define import Define
 
 def setup(argmn):
     """
     
     """
 
-def hello(name="World"):
-    return "Hello %s!" % name
-
-
-
 def main():
-    hello('')    
-
+    var = input() 
+    fall_v = Define(var)
+    fall_v.define(fall_v)
+    otherFall = fall_v.__defineReturn
+    encoreune = fall_v.__defineString
+    
 if __name__ == '__main__':
     main()
