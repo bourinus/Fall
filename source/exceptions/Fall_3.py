@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-
+# coding: utf-8
 # -1    1
 # j     1/j 
 # j^2   1/j^2     

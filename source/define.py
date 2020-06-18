@@ -2,9 +2,9 @@
 ##change
 #import math
 
-from source.exceptions import Fall_2
-from source.exceptions import Fall_3
-from source.exceptions import Fall_4
+from exceptions import Fall_2
+from exceptions import Fall_3
+from exceptions import Fall_4
 #from pip._vendor.html5lib._ihatexml import charStringToList
 #from pip._internal.utils.compat import str_to_display
 #from builtins import str
@@ -23,7 +23,7 @@ class Define(object):
         self.defineInit = defineInit
         self.defineReturn = defineReturn
         self.defineString = defineString
-        self.define()        
+        self.d
     
     @property
     def defineInit(self):

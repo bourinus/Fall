@@ -1,3 +1,4 @@
+# coding: utf-8
 # 'j'  'J barre'
 #
 # -1    1
