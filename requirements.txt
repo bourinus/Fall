@@ -1,3 +1,4 @@
+latex
 sphinx_pdj_theme
 fire     	# automatically generates command line interfaces (CLIs) from any Python object.
 mock		# allows you to replaces parts of your system under test with objects.

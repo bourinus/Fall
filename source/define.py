@@ -23,7 +23,6 @@ class Define(object):
         self.defineInit = defineInit
         self.defineReturn = defineReturn
         self.defineString = defineString
-        self.d
     
     @property
     def defineInit(self):

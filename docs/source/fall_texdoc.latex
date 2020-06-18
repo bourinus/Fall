@@ -1,0 +1,156 @@
+documentclass[a4paper]{report}
+\author{David Gueguen}
+\title{Cryptology in smart cards:\\		
+		implementations, threats and counter-measures.\\
+			Symmetrical \& Asymetrical algs\\						
+			}
+\usepackage[pdfauthor={David Gueguen},pdftitle={STATeOfTHeARtSmardCardsCryptology},pagebackref,pdftex]{hyperref}	 	
+\hypersetup{colorlinks,	
+	citecolor=red, filecolor=black, 
+		linkcolor=black, urlcolor=blue }
+			
+%dimension of the sheet
+\usepackage[a4paper, no foot,hmargin=1.5cm, vmargin=1.5cm,
+			 left=1.4cm, right=1.4cm	]
+			 	{geometry}
+
+%packages
+\usepackage[latin1]{inputenc}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{mathrsfs, amssymb, bbm, amssymb}
+\usepackage{amsmath, amsthm, amsfonts, latexsym, stmaryrd}
+\usepackage{marvosym}%symbol mail
+
+
+%algo package old but flexible
+\usepackage{epsfig}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+
+
+\addtocounter{tocdepth}{3}
+\setcounter{secnumdepth}{3} 
+
+
+\setlength{\parskip}{1em}			 	
+\setlength\parindent{20pt}		% globally suppress indentation		 	
+\medskip						%setup space between pararaph	
+
+%to index
+\usepackage{makeidx}
+\makeindex	
+
+% Symbols rip, etc -template matrix-
+%\usepackage{mathabx}
+
+% allow to use \citeauthor
+%\usepackage[numbers,sort]{natbib}
+\usepackage{natbib}
+%\bibliographystyle{alpha}
+%\bibliographystyle{apalike} moche
+\bibliographystyle{plainnat}
+%\bibliographystyle{abstract}	
+%\bibliographystyle{plainnat}%isbn et doi
+% allow to use \citeauthor
+%\usepackage[numbers,sort]{natbib}
+
+
+
+% Tables
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{supertabular}
+\usepackage{multirow}
+\usepackage{relsize}
+\usepackage{longtable}
+
+%theorme package
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+% Landscape pages
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+
+%Footnote for array (to place after the colour package)
+\usepackage{footnote}
+\usepackage{natbib}
+%\usepackage[sort&compress]{natbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\bld}[1]{
+	\mbox{\boldmath $#1$}
+		}
+
+\renewcommand{\thechapter}{
+	\Roman{chapter}
+		}
+
+\newcommand{\bigO}[1]{
+ 	\ensuremath{\mathop{}\mathopen{}\mathcal{O}\mathopen{}\left(#1\right)}
+ 		}	
+%\newcommand{\smallO}[1]{
+%	\ensuremath{\mathop{}
+%		\mathopen{{\scriptstyle\mathcal{O}}\mathopen{}\left(#1\right)}}
+
+
+
+% asterisc allow unumbered theorem
+\newcommand{\defi}[1]{  \textbf{Definition : #1 }}
+
+	%% add this
+	\let\oldUrl\url\renewcommand{\url}[1]{\href{#1}{$\mathscr{L}$ink}}
+	
+	\newcommand{\urlloki}[1]{ 
+		\href{https://choucroutage.com/Papers/SideChannelAttacks/#1} 
+			 {\raggedleft \color{blue}$\mathscr{L}ink$\color{black} \raggedright }     }
+	
+	\newcommand{\lokiquote}[1]{
+		\cite{#1}, \urlloki{#1.pdf}
+		}
+	
+
+\theoremstyle{definition}
+\newtheorem*{mydef}{Definition}
+\theoremstyle{plain}
+\newtheorem*{mythm}{Theorem}
+\theoremstyle{plain}
+\newtheorem*{myprop}{Proposition}
+\theoremstyle{plain}
+%%\newtheorem{lem}[thm]{Lemma}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			
+\begin{document}
+	\maketitle			
+	    \input{tex/Objective.tex}
+	    	\chapter{Symmetric encryption}	
+	    		\input{tex/SymmetricalIntro.tex}
+	    		\input{tex/SymmetricalImplementationDES.tex}	
+	    		\input{tex/SymmetricalLeak.tex}
+	    		\input{tex/SymmetricalTransformedDES.tex}
+	    			\input{tex/PhysicalAttacksIntro.tex}
+	    			\input{tex/PhysicalAttacksDPA.tex}
+	    			\input{tex/PhysicalAttacksHODPA.tex}
+	    	\chapter{Asymmetric encryption}
+	    		\input{tex/AsymmetricalIntro.tex}
+	    		\input{tex/AsymmetricalImplementation.tex}	
+	    			\input{tex/ImplementationRepresentation.tex}
+	    			\input{tex/ImplementationMultiplication.tex}
+	    			\input{tex/ImplementationSquarring.tex}
+	    			\input{tex/ImplementationReduction.tex}
+	    			\input{tex/ImplementationExponentiation.tex}
+	    			\input{tex/ImplementationAdditionChain.tex}
+	    			\input{tex/AsymmetricalThreatsSC.tex}
+	    			\input{tex/AsymmetricalThreatsFI.tex}
+	    			\input{tex/AsymmetricalThreatsCM.tex}
+	    	\chapter{About template attacks}	
+	    		\input{tex/AboutTemplate.tex}
+	\chapter{Latex definition \& tricks}
+		\input{tex/megabib}		
+		\input{tex/latextricks}
+		\bibliography{bibliographie}
+		\printindex
+\end{document}
