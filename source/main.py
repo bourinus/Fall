@@ -1,19 +1,21 @@
 # coding: utf-8
 """import this"""
 import os 
-from source.define import Define
+from define import Define
+from fall import *
 
-def setup(argmn):
+def setup(*argm):
     """
     
     """
 
 def main():
-    var = input() 
-    fall_v = Define(var)
-    fall_v.define(fall_v)
-    otherFall = fall_v.__defineReturn
-    encoreune = fall_v.__defineString
-    
+    for i in range(0,10000):
+        fall_v = Define(var)
+        fall_v.define(fall_v)
+        other_fall = fall_v.__defineReturn
+        encorene = fall_v.__defineString
+        print(object.__str__(fall_v))
+        
 if __name__ == '__main__':
     main()

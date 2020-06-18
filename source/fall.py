@@ -1,8 +1,6 @@
-import math#
-from exceptions import Fall_2 as Fall_2 
-from exceptions import Fall_3 as class_Fall3
-from exceptions import Fall_4 as Fall_4
-
+# coding: utf-8
+import math
+#from define import Define
 # import numpy as np
 # *
 #############
