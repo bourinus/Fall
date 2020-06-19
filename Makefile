@@ -10,7 +10,7 @@ PYTHON=${VENV_NAME}/bin/python3
 
 .DEFAULT: help
 help:
-	@echo "make install_fall"
+	@echo "make install"
 	@echo "   prepare development environment, use only once"
 	@echo "make test"
 	@echo "       run tests"
@@ -27,24 +27,30 @@ help:
 	@echo "make var"
 	@echo "   echo python var path"
 	
-install_fall:
-	sudo apt-get -y install python3.7 python3-pip
-	python3 -m pip install virtualenv
-	virtualenv venv -p /usr/bin/python3.7
-	sudo . $(VENV_NAME)/bin/activate: setup.py
+install:
+	which python3  || apt install -y install python3 python3-pip
+	which virtualenv || python3 -m pip install virtualenv
 	#At this break-point, we need to check dependencies for future dev (ie sys.path)
-#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+	which dpkg-buildpackage || apt install -y debhelper dh-virtualenv dh-systemd lintian
+	make venv
 	
 #alias activate=". ../.env/bin/activate"
 
 # Requirements are in setup.py, so whenever setup.py is changed, re-run installation of dependencies.
-venv: 
-	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
-	
+#venv: 
+#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+#	
+#	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
+#	sudo ${PYTHON} -m pip install -U pip
+#	sudo ${PYTHON} -m pip install -e
+#	sudo $(VENV_NAME)/bin/activate
+
+venv: $(VENV_NAME)/bin/activate
+$(VENV_NAME)/bin/activate: setup.py
 	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
-	sudo ${PYTHON} -m pip install -U pip
-	sudo ${PYTHON} -m pip install -e
-	sudo $(VENV_NAME)/bin/activate
+	${PYTHON} -m pip install -U pip setuptools
+	${PYTHON} -m pip install -e .[devel]
+	touch $(VENV_NAME)/bin/activate
 
 var:
 	@echo " VENV_NAME:" + ${VENV_NAME}

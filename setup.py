@@ -29,7 +29,7 @@ setuptools.setup(
         'sphinx.ext.mathjax',
         'sphinx.ext.ifconfig',
         'sphinx.ext.viewcode',
-        'sphinx.ext.mathbase'
+        'sphinx.ext.mathbase',
         'sphinx.ext.githubpages',
     ],
 
