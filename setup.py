@@ -9,7 +9,7 @@ with open('README.md') as f:
 
 setuptools.setup(
     name='fallapp',
-    version='1.0',
+    version='0.0.1',
     packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
 
@@ -21,8 +21,16 @@ setuptools.setup(
 
     # All versions are fixed just for case. Once in while try to check for new versions.
     install_requires=[
-        'flask==1.0.2',
-        'psycopg2==2.7.5',
+        'sphinx.ext.autodoc',
+        'sphinx.ext.doctest',
+        'sphinx.ext.intersphinx',
+        'sphinx.ext.todo',
+        'sphinx.ext.coverage',
+        'sphinx.ext.mathjax',
+        'sphinx.ext.ifconfig',
+        'sphinx.ext.viewcode',
+        'sphinx.ext.mathbase'
+        'sphinx.ext.githubpages',
     ],
 
     # Do not use test_require or build_require, because then it's not installed and
