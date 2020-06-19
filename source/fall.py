@@ -364,9 +364,9 @@ def cpt13_Triangle(n, lvl):
     345  110
     count in level of primes
     OUTPUTS
-        1*  
-        2*
-        3*
+    1*  
+    2*
+    3*
     """
     if     3 * lvl == lvl ^ 3:  # only 
         if lvl * lvl == lvl + lvl: 

@@ -1,7 +1,4 @@
-.. Fall documentation master file, created by
-   sphinx-quickstart on Wed Jun 10 11:18:20 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Fall documentation master file
 
 Welcome to Fall's documentation!
 ================================
@@ -9,11 +6,6 @@ Welcome to Fall's documentation!
    :maxdepth: 2
    :caption: Contents:
          
-Readme File
-===========
-.. automodule::
-   :members:
-
 Indices and tables
 ==================
 
@@ -46,3 +38,7 @@ Fall exceptions 3
 .. automodule:: source.exceptions.Fall_3
    :members:
    
+Fall exceptions 4
+=================
+.. automodule:: source.exceptions.Fall_4
+   :members:
