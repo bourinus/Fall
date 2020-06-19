@@ -9,10 +9,7 @@ Welcome to Fall's documentation!
    :maxdepth: 2
    :caption: Contents:
          
-Readme File
-===========
-.. automodule::
-   :members:
+
 
 Indices and tables
 ==================
