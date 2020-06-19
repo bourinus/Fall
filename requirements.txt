@@ -1,43 +1,45 @@
-Keras==2.2.4
-Keras-Preprocessing==1.0.5
-PySocks==1.6.8
-Pygments==2.3.1
-Quandl==3.4.5
-asn1crypto==0.24.0
-backcall==0.1.0
-beautifulsoup4==4.6.3
-certifi==2018.8.24
-cffi==1.11.5
-chardet==3.0.4
-cryptography==2.3.1
-cycler==0.10.0
-h5py==2.9.0
-idna==2.7
-inflection==0.3.1
-ipython==7.2.0
-jedi==0.13.2
-kiwisolver==1.0.1
-matplotlib==3.0.0
-more-itertools==5.0.0
-numpy==1.18.0
-pandas==0.23.4
-patsy==0.5.0
-pexpect==4.6.0
-pickleshare==0.7.5
-pip==10.0.1
-ptyprocess==0.6.0
-pyOpenSSL==18.0.0
-pycparser==2.19
-pyparsing==2.2.1
-python-dateutil==2.7.3
-pytz==2018.5
-requests>=2.20.0
-scikit-learn==0.20.0
-scipy==1.1.0
-seaborn==0.9.0
-setuptools==40.2.0
-six==1.11.0
-tornado==5.1.1
-traitlets==4.3.2
-wcwidth==0.1.7
-wheel==0.31.1
+pip==20.1.1 				# The PyPA recommended tool for installing Python packages.
+wheel==0.34.2 				# A built-package format for Python
+Pygments==2.3.1   			# generic syntax highlighter 
+matplotlib==3.2.2 			# Python plotting package
+numpy==1.18.5 				# NumPy is the fundamental package for array computing with Python.
+asn1crypto==0.24.0  		# Fast ASN.1 parser and serializer 
+certifi==2018.8.24 			# Python package for providing Mozilla's CA Bundle.
+cryptography==2.9.2 		# provides cryptographic recipes and primitives
+pyOpenSSL==19.1.0 			# Python wrapper module around the OpenSSL library
+
+# 	chardet==3.0.4 				# Universal encoding detector for Python 2 and 3
+# 	Keras==2.2.4  				# Keras: the Python deep learning API
+# 	Keras-Preprocessing==1.0.5	# Keras: the Python deep learning API
+# 	PySocks==1.6.8	   			# PySocks lets you send traffic through SOCKS and HTTP proxy servers.
+# 	Quandl==3.4.5 				# Get financial data  
+# 	backcall==0.1.0 			# Specifications for callback functions passed in to an API
+# 	beautifulsoup4==4.9.1 		# Screen-scraping library
+# 	cffi==1.11.5 				# Foreign Function Interface for Python calling C code.
+# 	cycler==0.10.0 				# Composable style cycles
+# 	h5py==2.10.0 				# Read and write HDF5 files from Python
+# 	idna==2.9 					# Internationalized Domain Names in Applications (IDNA)
+# 	inflection==0.3.1 			# A port of Ruby on Rails inflector to Python
+# 	ipython==7.15.0 			# Productive Interactive Computing
+# 	jedi==0.17.2 				# An autocompletion tool for Python for text editors.
+# 	kiwisolver==1.0.1 			# A fast implementation of the Cassowary constraint solver
+# 	more-itertools==8.4.0 		# More routines for operating on iterables, beyond itertools
+# 	pandas==1.0.5 				# Powerful data structures for data analysis, time series, and statistics
+# 	patsy==0.5.0 				# Statistical models and for building design matrices.
+# 	pexpect==4.8.0  			# Pexpect allows easy control of interactive console applications.
+# 	pickleshare==0.7.5 			# Tiny 'shelve'-like database with concurrency support
+# 	ptyprocess==0.6.0 			# Run a subprocess in a pseudo terminal
+# 	pycparser==2.20  			# C parser in Python			
+# 	pyparsing==2.4.7 			# Python parsing module
+# 	python-dateutil==2.8.1 		# Extensions to the standard Python datetime module
+# 	pytz==2020.1 				# World timezone definitions, modern and historical
+# 	requests>=2.24.0 			# Python HTTP for Humans.
+# 	scikit-learn==0.23.1 		# modules for machine learning and data mining
+# 	scipy==1.1.0 				# SciPy: Scientific Library for Python
+# 	seaborn==0.10.1 			# statistical data visualization
+# 	setuptools==47.3.1 			# Easily download, build, install, upgrade, and uninstall packages
+# 	six==1.11.0 				# Python 2 and 3 compatibility utilities
+# 	tornado==6.0.4 				# Python web framework and asynchronous networking library
+# 	traitlets==4.3.3 			# Traitlets Python config system
+# 	wcwidth==0.2.4 				# Measures the displayed width of unicode strings in a terminal
+ 
