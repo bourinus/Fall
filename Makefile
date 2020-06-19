@@ -1,5 +1,6 @@
 # From:
 # https://blog.horejsek.com/makefile-with-python/
+# https://www.dinotools.de/en/2019/12/23/use-python-with-virtualenv-in-makefiles/
 # https://stackoverflow.com/questions/50199070/sphinx-extension-installation-of-sphinxcontrib-bibtex
 .PHONY: help install_fall test lint run doc reset clean var
 

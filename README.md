@@ -6,7 +6,7 @@ Exponentiation, paradox & repetition based functions in python.
 
 Seeks & destroys paradoxes with new recursions, proofs, sequences, formalism, principles.
 
-[Project address](https://github.com/bourinus/Fall)   [Readme address](https://github.com/bourinus/Fall/readme.md)
+[Project address](https://github.com/bourinus/Fall)   [Readme address](https://github.com/bourinus/Fall/readme.md)    [Documentation address](https://fall.readthedocs.io/en/latest/)
 
 Current State:  1 stable function: define() only accessible from SageMath console.
 
