@@ -6,7 +6,12 @@ class BasicTestSuite(unittest.TestCase):
     """
     Basic test cases.
     """
+    def setUp(self):
+        print( "---------------- Before test" )
 
+    def tearDown(self):
+        print( "_________________ After test" )
+        
     def test_define0(self):
         print("define: test", self)
         assert define('0') == '0'

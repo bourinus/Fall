@@ -29,7 +29,9 @@ help:
 	
 install:
 	which python3  || apt install -y install python3 python3-pip
-	which virtualenv || python3 -m pip install virtualenv
+#warning while installing, recommanding  to upgrade pip
+#	pip install --upgrade pip
+	which venv || python3 -m pip install -r requirements.txt
 	#At this break-point, we need to check dependencies for future dev (ie sys.path)
 	which dpkg-buildpackage || apt install -y debhelper dh-virtualenv dh-systemd lintian
 	make venv
@@ -49,7 +51,7 @@ venv: $(VENV_NAME)/bin/activate
 $(VENV_NAME)/bin/activate: setup.py
 	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
 	${PYTHON} -m pip install -U pip setuptools
-	${PYTHON} -m pip install -e .[devel]
+	${PYTHON} -m pip install -r requirements.txt 
 	touch $(VENV_NAME)/bin/activate
 
 var:
