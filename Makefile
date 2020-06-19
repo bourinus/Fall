@@ -31,6 +31,7 @@ install_fall:
 	sudo apt-get -y install python3.7 python3-pip
 	python3 -m pip install virtualenv
 	virtualenv venv -p /usr/bin/python3.7
+	sudo . $(VENV_NAME)/bin/activate: setup.py
 	#At this break-point, we need to check dependencies for future dev (ie sys.path)
 #	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
 	
@@ -38,13 +39,12 @@ install_fall:
 
 # Requirements are in setup.py, so whenever setup.py is changed, re-run installation of dependencies.
 venv: 
-#	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
-#	sudo . $(VENV_NAME)/bin/activate
-#	sudo . $(VENV_NAME)/bin/activate: setup.py
-#	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
-#	sudo ${PYTHON} -m pip install -U pip
-#	sudo ${PYTHON} -m pip install -e
-#	sudo $(VENV_NAME)/bin/activate
+	VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
+	
+	test -d $(VENV_NAME) || virtualenv -p python3 $(VENV_NAME)
+	sudo ${PYTHON} -m pip install -U pip
+	sudo ${PYTHON} -m pip install -e
+	sudo $(VENV_NAME)/bin/activate
 
 var:
 	@echo " VENV_NAME:" + ${VENV_NAME}
