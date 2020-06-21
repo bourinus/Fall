@@ -4,6 +4,7 @@
 from .exceptions.Fall2 import *
 from .exceptions.Fall3 import *
 from .exceptions.Fall4 import *
+#import numpy as np
 #from exceptions import Fall_4
 from builtins import str
 from source import exceptions
