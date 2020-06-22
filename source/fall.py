@@ -183,7 +183,7 @@ def counter_65(n):
     counter_65(np.mod(4 * n, 100))
     if n == 8: counter_65(n)
     pass
-
+# Super shitty zone
 def spell(n):
     """
     Attempt to spell number from the left
@@ -204,7 +204,6 @@ def spell(n):
         n += 1
         print ("2*n/3-1: ", 2 * n / 3 + 1)
 #        return2Var(2 * n / 3 + 1)
-
 
 def Tower(n):
     ##############################################
