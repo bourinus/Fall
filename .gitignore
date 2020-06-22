@@ -15,3 +15,7 @@ tests/__pycache__/
 .pytest_cache
 
 get-pip.py
+
+.externalToolBuilders/Make.launch
+
+source/context.py
