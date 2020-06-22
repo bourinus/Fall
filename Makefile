@@ -29,7 +29,7 @@ help:
 	
 install:
 	which python3  || apt install -y  python3 python3-pip
-	#sudo apt-get install latexmk texlive texlive-science texlive-formats-extra	
+	sudo apt install latexmk texlive texlive-science texlive-formats-extra	
 	sudo apt install -y curl
 	which get-pip.py || curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 	python3 get-pip.py pip==20.1.1 wheel==0.34.2 setuptools==47.3.1 
