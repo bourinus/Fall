@@ -13,3 +13,5 @@ tests/__pycache__/
 .settings
 .pydevproject
 .pytest_cache
+
+get-pip.py

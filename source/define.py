@@ -1,9 +1,9 @@
 # coding: utf-8
 ##change
 #import math
-from .exceptions.Fall2 import *
-from .exceptions.Fall3 import *
-from .exceptions.Fall4 import *
+from source.exceptions.Fall_2 import *
+from source.exceptions.Fall_3 import *
+from source.exceptions.Fall_4 import *
 #import numpy as np
 #from exceptions import Fall_4
 from builtins import str
@@ -13,10 +13,8 @@ from source import exceptions
 #from builtins import str
 
 class DefineException(Exception):
-    
     def __init__(self, message):
         Exception.__init__(self, message)
-
 
 class Define(object):    
     """

@@ -3,9 +3,9 @@ import math
 import cmath 
 
 import numpy as np
-from .exceptions import Fall_2
-from .exceptions import Fall_3
-from .exceptions import Fall_4
+from source.exceptions import Fall_2
+from source.exceptions import Fall_3
+from source.exceptions import Fall_4
 #from define import Define
 # import numpy as np
 # *

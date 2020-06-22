@@ -28,6 +28,12 @@ Fall models
 .. automodule:: source.rational
    :members:
 
+
+Define model
+============
+.. automodule:: source.define
+   :members:   
+
 Fall exceptions 2
 =================
 .. automodule:: source.exceptions.Fall_2

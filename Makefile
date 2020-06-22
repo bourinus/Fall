@@ -2,7 +2,7 @@
 # https://blog.horejsek.com/makefile-with-python/
 # https://www.dinotools.de/en/2019/12/23/use-python-with-virtualenv-in-makefiles/
 # https://stackoverflow.com/questions/50199070/sphinx-extension-installation-of-sphinxcontrib-bibtex
-.PHONY: help install_fall test lint run doc reset clean var
+.PHONY: help install test lint run doc reset clean var
 
 VENV_NAME?=venv
 VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
@@ -28,14 +28,21 @@ help:
 	@echo "   echo python var path"
 	
 install:
-	which python3  || apt install -y install python3 python3-pip
-#warning while installing, recommanding  to upgrade pip
-#	pip install --upgrade pip
+	which python3  || apt install -y  python3 python3-pip
+	sudo apt install -y curl
+	which get-pip.py || curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+	python3 get-pip.py pip==20.1.1 wheel==0.34.2 setuptools==47.3.1 
+
+	which virtualenv || python3 -m pip install virtualenv
 	which venv || python3 -m pip install -r requirements.txt
+
+	#warning while installing, recommanding  to upgrade pip
+	#	
+	python3 -m pip install --upgrade pip
 	#At this break-point, we need to check dependencies for future dev (ie sys.path)
 	which dpkg-buildpackage || apt install -y debhelper dh-virtualenv dh-systemd lintian
 	make venv
-	
+
 #alias activate=". ../.env/bin/activate"
 
 # Requirements are in setup.py, so whenever setup.py is changed, re-run installation of dependencies.

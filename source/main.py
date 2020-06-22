@@ -7,9 +7,6 @@ from source.define import Define
 from source.rational import Rational
 from source.rational import RationalException
 #from source.fall import *
-from appdirs import site_config_dir
-from pip._internal.utils.appdirs import site_config_dirs
-from _vendor.appdirs import site_data_dir
 from source.fall import define
 from random import Random
 import random
@@ -111,8 +108,7 @@ def setup(*argm):
     """
 
 def main():
-    printConf()
-    #rationnalDebugLoop(15)
+    rationnalDebugLoop(15)
 
 if __name__ == '__main__':
     main()
