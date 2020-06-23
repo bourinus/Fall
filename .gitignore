@@ -19,3 +19,5 @@ get-pip.py
 .externalToolBuilders/Make.launch
 
 source/context.py
+
+generated_pdf.pdf
