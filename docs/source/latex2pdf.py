@@ -10,7 +10,7 @@ def building_pdf():
     current_dir = os.path.abspath(os.path.dirname(__file__))
     # we are adding an empty string to include the default locations (this is
     # described on the tex manpage)
-    pdf = build_pdf(open('fall_texdoc.latex'), texinputs=[current_dir, ''])
+    pdf = build_pdf(open('./docs/source/fall_texdoc.latex'), texinputs=[current_dir, ''])
     pdf.save_to('generated_pdf.pdf')
 
 if __name__ == '__main__':

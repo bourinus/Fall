@@ -2,7 +2,7 @@
 # https://blog.horejsek.com/makefile-with-python/
 # https://www.dinotools.de/en/2019/12/23/use-python-with-virtualenv-in-makefiles/
 # https://stackoverflow.com/questions/50199070/sphinx-extension-installation-of-sphinxcontrib-bibtex
-.PHONY: help install test lint run doc reset clean var
+.PHONY: help install test lint run doc reset clean var pdf
 
 VENV_NAME?=venv
 VENV_ACTIVATE=. $(VENV_NAME)/bin/activate
@@ -26,9 +26,11 @@ help:
 	@echo "   clean build directory"
 	@echo "make var"
 	@echo "   echo python var path"
+	@echo "make pdf"
+	@echo "   build pdf from latex source"
 	
 install:
-	which python3  || apt install -y  python3.8 python3-pip
+	which python3.8  || apt install -y  python3.8 python3-pip
 	sudo apt install latexmk texlive texlive-science texlive-formats-extra	
 	sudo apt install -y curl
 	which get-pip.py || curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
@@ -36,7 +38,7 @@ install:
 	which virtualenv || python3 -m pip install virtualenv
 	which venv || python3.8 -m pip install -r requirements.txt
 
-	#warning while installing, recommanding  to upgrade pip
+	#warning while installing, recommanding  to upgrade pip.
 	#	
 	python3 -m pip install --upgrade pip
 	#At this break-point, we need to check dependencies for future dev (ie sys.path)
@@ -79,6 +81,9 @@ run: venv
 
 doc:
 	cd docs; make html
+	
+pdf: venv
+	${PYTHON} ./docs/source/latex2pdf.py
 	
 #	$(VENV_ACTIVATE) && cd docs; make html
 	
