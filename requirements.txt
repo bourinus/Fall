@@ -8,7 +8,9 @@ numpy==1.18.5 				# NumPy is the fundamental package for array computing with Py
 #certifi==2018.8.24 			# Python package for providing Mozilla's CA Bundle.
 #cryptography==2.9.2 		# provides cryptographic recipes and primitives
 #pyOpenSSL==19.1.0 			# Python wrapper module around the OpenSSL library
+latex==0.7.0
 pylatex==1.3.2
+pdflatex==0.1.3             
 sphinx_pdj_theme==0.1.6  	# dark theme for sphinx documentation based on the read the docs theme.
 
 # 	chardet==3.0.4 				# Universal encoding detector for Python 2 and 3
