@@ -1,12 +1,10 @@
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/bourinus/Fall) 
-[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/TheAlgorithms/Python/blob/master/CONTRIBUTING.md)&nbsp;
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/bourinus/Fall/CONTRIBUTING.md)&nbsp;
 <!--[![Tested on Python 3.8](https://img.shields.io/badge/Tested%20-Python%203.8-blue.svg?logo=python&style=flat-square)]( https://www.python.org/downloads) &nbsp;-->
 [![Build Status](https://travis-ci.org/Fall/python.svg?branch=master)](https://travis-ci.org/Fall/python)
 [![PyPI version](https://badge.fury.io/py/Fall.svg)](https://badge.fury.io/py/Fall)
-[![codecov](https://codecov.io/gh/fall/python/branch/master/graph/badge.svg)](https://codecov.io/gh/fall/python "Non-generated packages only")
-[![pypi supported versions](https://img.shields.io/pypi/pyversions/kubernetes.svg)](https://pypi.python.org/pypi/kubernetes)
-[![fall Capabilities](https://img.shields.io/badge/fall%20client-Silver-blue.svg?
-[![fall Support Level](https://img.shields.io/badge/fall%20client-beta-green.svg?style=flat&colorA=306CE8)](http://bit.ly/kubernetes-client-support-badge)
+[![pypi supported versions](https://img.shields.io/pypi/pyversions/kubernetes.svg)](https://pypi.python.org/pypi/fall)
+
 # Fall
 
 Fall: stable operators of fall.
