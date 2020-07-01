@@ -1,7 +1,6 @@
 # coding: utf-8
 import math
 import cmath 
-
 import numpy as np
 from source.exceptions import Fall_2
 from source.exceptions import Fall_3
@@ -13,6 +12,59 @@ from source.exceptions import Fall_4
 
 #############
 # Clean stuffs, David's section
+
+###########################
+# Hyper Abstract Area debut
+def count_P0(n):
+    '''
+    Accept all abstract variables
+    # 1 2 3 4
+    # 5 6 7 0
+    '''
+    if n==1 or n==2 or n==3: return 4 
+    if n==5 or n==6 or n==7: return 0    
+    
+def count_P1(n):
+    '''
+    Accept variables from P_0 & P_3
+    # 0 1 2 3
+    # 4 5 6 7
+    '''
+    if n==0 or n==1 or n==2: return 3 
+    if n==4 or n==5 or n==6: return 7    
+    
+def count_P2(n):
+    '''
+    Accept variables from P_0 & P_1
+    # 1 2 3 8
+    # 5 6 7 4
+    '''
+    if n==1 or n==2 or n==3: return 8 
+    if n==5 or n==6 or n==7: return 4    
+    
+# Mortal area binary world
+def count_P3(n):
+    '''
+    Accept variables from P_0 & P_1
+    # 1 2 4 5
+    # 6 7 8 9
+    '''
+    if n==1 or n==2 or n==4: return 5 
+    if n==6 or n==7 or n==8: return 9    
+# See throught paradoxe world
+def count_P4(n):
+    '''
+    Accept variables from P_0 & P_2
+    # 0 3 6 9
+    # 1 2 3 5
+    '''
+    if n==0 or n==3 or n==6: return 9 
+    if n==1 or n==2 or n==3: return 5    
+    
+###########################
+# Hyper Abstract Area end
+
+
 
 def define(b):
     """
