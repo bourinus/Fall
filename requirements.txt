@@ -1,4 +1,4 @@
-pip==20.1.1 				# The PyPA recommended tool for installing Python packages.
+pip==21.1 				# The PyPA recommended tool for installing Python packages.
 wheel==0.34.2 				# A built-package format for Python
 Sphinx==3.1.1 				# makes it easy to create intelligent and beautiful documentation
 Pygments==2.3.1   			# generic syntax highlighter 
