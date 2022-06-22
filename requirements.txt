@@ -3,7 +3,7 @@ wheel==0.34.2 				# A built-package format for Python
 Sphinx==3.1.1 				# makes it easy to create intelligent and beautiful documentation
 Pygments==2.3.1   			# generic syntax highlighter 
 matplotlib==3.2.2 			# Python plotting package
-numpy==1.18.5 				# NumPy is the fundamental package for array computing with Python.
+numpy==1.22.0 				# NumPy is the fundamental package for array computing with Python.
 #asn1crypto==0.24.0  		# Fast ASN.1 parser and serializer 
 #certifi==2018.8.24 			# Python package for providing Mozilla's CA Bundle.
 #cryptography==2.9.2 		# provides cryptographic recipes and primitives
